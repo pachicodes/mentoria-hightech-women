@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="pt-PT" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentoria Premium Tech & Posicionamento - HighTech Women</title>
+  <meta name="description" content="Vence a Síndrome da Impostora, supera o perfeccionismo que paralisa o teu crescimento e posiciona-te com a segurança emocional que o mercado sénior exige.">
+  
+  <!-- Tailwind CSS Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'tech-bg': '#120A2A',
+            'tech-purple-dark': '#090416',
+            'tech-purple-light': '#1E1045',
+            'tech-purple-accent': '#2C1665',
+            'tech-gold': '#D4AF37',
+            'tech-gold-light': '#F6E6B4',
+            'tech-gold-dark': '#A6841E',
+            'tech-text': '#F3F4F6',
+            'tech-text-muted': '#9CA3AF'
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Montserrat', 'sans-serif'],
+            mono: ['Fira Code', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome for Premium Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #120A2A;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1E1045;
+      border-radius: 4px;
+      border: 1px solid #120A2A;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #D4AF37;
+    }
+
+    /* Technical Grid Background Pattern */
+    .tech-grid-pattern {
+      background-size: 40px 40px;
+      background-image: 
+        linear-gradient(to right, rgba(212, 175, 55, 0.015) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(212, 175, 55, 0.015) 1px, transparent 1px);
+    }
+    
+    /* Glowing radial background spots */
+    .glow-blur-purple {
+      filter: blur(130px);
+      background: radial-gradient(circle, rgba(139, 92, 246, 0.12) 0%, rgba(18, 10, 42, 0) 70%);
+    }
+
+    .glow-blur-gold {
+      filter: blur(100px);
+      background: radial-gradient(circle, rgba(212, 175, 55, 0.04) 0%, rgba(18, 10, 42, 0) 70%);
+    }
+
+    /* Neon text shadow for gold text */
+    .gold-glow-text {
+      text-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
+    }
+  </style>
+</head>
+<body class="bg-tech-bg text-tech-text font-sans antialiased overflow-x-hidden tech-grid-pattern min-h-screen">
+
+  <!-- Ambient Glow Effects -->
+  <div class="absolute top-20 left-1/4 w-[40vw] h-[40vw] rounded-full glow-blur-purple pointer-events-none -z-10"></div>
+  <div class="absolute top-1/3 right-1/4 w-[35vw] h-[35vw] rounded-full glow-blur-gold pointer-events-none -z-10"></div>
+  <div class="absolute bottom-1/4 left-10 w-[45vw] h-[45vw] rounded-full glow-blur-purple pointer-events-none -z-10"></div>
+
+  <!-- Header / Navigation -->
+  <header class="sticky top-0 z-50 w-full backdrop-blur-md bg-tech-bg/75 border-b border-tech-purple-light/50 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logo -->
+      <a href="#" class="flex items-center space-x-2 group">
+        <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-tech-purple-light to-tech-purple-accent border border-tech-gold/30 flex items-center justify-center group-hover:border-tech-gold transition-all">
+          <span class="font-mono text-tech-gold font-bold text-lg">&lt;/&gt;</span>
+        </div>
+        <span class="font-display font-extrabold text-lg tracking-wider text-white">
+          HIGHTECH <span class="text-tech-gold font-semibold">WOMEN</span>
+        </span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden md:flex items-center space-x-8">
+        <a href="#diagnostico" class="text-sm font-medium hover:text-tech-gold transition-colors duration-200">O Diagnóstico</a>
+        <a href="#achievement-wall" class="text-sm font-medium hover:text-tech-gold transition-colors duration-200">A Ferramenta</a>
+        <a href="#programas" class="text-sm font-medium hover:text-tech-gold transition-colors duration-200">Os Programas</a>
+        <a href="#mentora" class="text-sm font-medium hover:text-tech-gold transition-colors duration-200">A Mentora</a>
+      </nav>
+
+      <!-- CTA Button Nav -->
+      <div class="hidden md:block">
+        <a href="#programas" class="inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-sm font-semibold border border-tech-gold text-tech-gold hover:bg-tech-gold hover:text-tech-bg transition-all duration-300 shadow-[0_0_10px_rgba(212,175,55,0.1)]">
+          Quero Começar
+        </a>
+      </div>
+
+      <!-- Mobile menu button -->
+      <div class="flex md:hidden">
+        <button id="mobile-menu-btn" type="button" class="text-tech-text-muted hover:text-white focus:outline-none" aria-label="Abrir menu">
+          <i class="fa-solid fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-tech-purple-dark/95 border-b border-tech-purple-light/50 px-4 pt-2 pb-6 space-y-4">
+      <a href="#diagnostico" class="block text-base font-medium py-2 border-b border-tech-purple-light/30 hover:text-tech-gold">O Diagnóstico</a>
+      <a href="#achievement-wall" class="block text-base font-medium py-2 border-b border-tech-purple-light/30 hover:text-tech-gold">A Ferramenta</a>
+      <a href="#programas" class="block text-base font-medium py-2 border-b border-tech-purple-light/30 hover:text-tech-gold">Os Programas</a>
+      <a href="#mentora" class="block text-base font-medium py-2 border-b border-tech-purple-light/30 hover:text-tech-gold">A Mentora</a>
+      <a href="#programas" class="block w-full text-center px-4 py-3 rounded-lg text-sm font-semibold bg-tech-gold text-tech-bg hover:bg-tech-gold-light transition-all">
+        Quero Dominar o Meu Espaço
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- 1. HERO SECTION (Dobra Principal) -->
+    <section class="relative pt-12 pb-24 md:pt-20 md:pb-32 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          
+          <!-- Text Content (7 Cols) -->
+          <div class="lg:col-span-7 flex flex-col justify-center space-y-8">
+            
+            <!-- Tech Badge -->
+            <div class="inline-flex items-center space-x-2 bg-tech-purple-light/50 border border-tech-gold/20 rounded-full px-4 py-1.5 self-start shadow-sm">
+              <span class="flex h-2 w-2 relative">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tech-gold opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-tech-gold"></span>
+              </span>
+              <span class="font-mono text-xs tracking-wider text-tech-gold-light uppercase">Exclusivo para Mulheres em Tech</span>
+            </div>
+
+            <!-- Headline -->
+            <h1 class="font-display font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-tight leading-[1.1] text-white">
+              <span class="font-mono text-tech-gold text-xl sm:text-2xl block mb-3 font-semibold gold-glow-text">TL;DR:</span>
+              Chega de silenciar a tua voz técnica. É hora de dominar o teu espaço em tecnologia.
+            </h1>
+
+            <!-- Subheadline -->
+            <p class="text-lg md:text-xl text-tech-text-muted max-w-2xl leading-relaxed">
+              Vence a Síndrome da Impostora, supera o perfeccionismo que paralisa o teu crescimento e posiciona-te com a segurança emocional que o mercado sénior exige.
+            </p>
+
+            <!-- Action Buttons and trust proof -->
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center space-y-4 sm:space-y-0 sm:space-x-6 pt-4">
+              <a href="#programas" class="group relative inline-flex items-center justify-center px-8 py-4 bg-tech-gold text-tech-bg text-base font-bold rounded-lg overflow-hidden transition-all duration-300 hover:bg-tech-gold-light hover:shadow-[0_0_25px_rgba(212,175,55,0.45)] hover:scale-[1.02]">
+                Quero Dominar o Meu Espaço
+                <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+              </a>
+              <a href="#diagnostico" class="inline-flex items-center justify-center px-8 py-4 border border-tech-purple-light bg-tech-purple-dark/20 text-tech-text hover:bg-tech-purple-light/40 hover:text-white rounded-lg transition-all duration-300">
+                Saber Mais
+              </a>
+            </div>
+
+            <!-- Developer Friendly Indicator -->
+            <div class="flex items-center space-x-4 pt-6 border-t border-tech-purple-light/40 text-xs font-mono text-tech-text-muted">
+              <span><i class="fa-solid fa-lock text-tech-gold mr-1.5"></i> Vagas limitadas por coorte</span>
+              <span>•</span>
+              <span><i class="fa-solid fa-code text-tech-gold mr-1.5"></i> Abordagem 100% prática</span>
+            </div>
+
+          </div>
+
+          <!-- Decorative Terminal IDE (5 Cols) -->
+          <div class="lg:col-span-5 w-full">
+            <div class="w-full bg-tech-purple-dark/80 rounded-xl border border-tech-purple-light/80 shadow-2xl overflow-hidden relative backdrop-blur-sm">
+              <!-- Window header -->
+              <div class="bg-tech-purple-light/40 px-4 py-3 flex items-center justify-between border-b border-tech-purple-light/50">
+                <div class="flex items-center space-x-2">
+                  <div class="w-3.5 h-3.5 rounded-full bg-red-500/80"></div>
+                  <div class="w-3.5 h-3.5 rounded-full bg-yellow-500/80"></div>
+                  <div class="w-3.5 h-3.5 rounded-full bg-green-500/80"></div>
+                </div>
+                <div class="font-mono text-xs text-tech-text-muted flex items-center space-x-1.5">
+                  <i class="fa-regular fa-folder-open text-tech-gold"></i>
+                  <span>mentoria.js</span>
+                </div>
+                <div class="w-10"></div>
+              </div>
+              
+              <!-- Terminal Content -->
+              <div class="p-6 font-mono text-xs sm:text-sm leading-relaxed overflow-x-auto text-tech-text-muted">
+                <div>
+                  <span class="text-pink-400">const</span> <span class="text-blue-300">mentorada</span> = {
+                </div>
+                <div class="pl-4">
+                  nome: <span class="text-green-300">"Mulher Tech Líder"</span>,
+                </div>
+                <div class="pl-4">
+                  vozesSilenciadas: <span class="text-red-400">true</span>,
+                </div>
+                <div class="pl-4">
+                  sindromeImpostora: <span class="text-red-400">true</span>,
+                </div>
+                <div class="pl-4">
+                  perfeccionismoParalisante: <span class="text-red-400">true</span>
+                </div>
+                <div>};</div>
+                <div class="mt-4">
+                  <span class="text-pink-400">function</span> <span class="text-yellow-300">desbloquearPotencial</span>(<span class="text-blue-300">dev</span>) {
+                </div>
+                <div class="pl-4 text-tech-text">
+                  <span class="text-pink-400">const</span> desbloqueada = { ...dev };
+                </div>
+                <div class="pl-4 text-tech-text">
+                  desbloqueada.segurancaEmocional = <span class="text-tech-gold">"Sénior"</span>;
+                </div>
+                <div class="pl-4 text-tech-text">
+                  desbloqueada.vozesSilenciadas = <span class="text-green-400">false</span>;
+                </div>
+                <div class="pl-4 text-tech-text">
+                  desbloqueada.sindromeImpostora = <span class="text-green-400">false</span>;
+                </div>
+                <div class="pl-4 text-tech-text">
+                  desbloqueada.perfeccionismoParalisante = <span class="text-green-400">false</span>;
+                </div>
+                <div class="pl-4 text-tech-text">
+                  desbloqueada.achievementWall = <span class="text-pink-400">new</span> <span class="text-blue-300">WallOfWins</span>();
+                </div>
+                <div class="pl-4">
+                  <span class="text-pink-400">return</span> desbloqueada;
+                </div>
+                <div>}</div>
+                <div class="mt-4 border-t border-tech-purple-light/40 pt-4">
+                  <span class="text-tech-gold-light">$</span> <span class="text-tech-text">npx run-mentoria --setup</span>
+                </div>
+                <div class="text-tech-gold mt-1 animate-pulse">
+                  &gt; A iniciar transformação de carreira... [OK]
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. PAIN POINTS SECTION (O Diagnóstico) -->
+    <section id="diagnostico" class="relative py-24 bg-tech-purple-dark/30 border-y border-tech-purple-light/40">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header -->
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-white tracking-tight">
+            Identificas-te com algum destes cenários?
+          </h2>
+          <div class="h-1 w-20 bg-tech-gold mx-auto mt-4 rounded-full"></div>
+          <p class="text-tech-text-muted mt-4 text-base sm:text-lg">
+            O diagnóstico prático do que impede o teu crescimento no ambiente tecnológico atual.
+          </p>
+        </div>
+
+        <!-- 3-Column Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Card 1 -->
+          <div class="group relative rounded-xl border border-tech-purple-light bg-tech-purple-dark/40 p-8 transition-all duration-300 hover:border-tech-gold hover:shadow-[0_0_20px_rgba(212,175,55,0.1)] hover:-translate-y-1">
+            <!-- Icon -->
+            <div class="w-12 h-12 rounded-lg bg-tech-purple-light flex items-center justify-center border border-tech-purple-accent/60 mb-6 group-hover:border-tech-gold/50 transition-colors">
+              <i class="fa-solid fa-volume-xmark text-tech-gold text-xl"></i>
+            </div>
+            <!-- Title -->
+            <h3 class="font-display font-bold text-xl text-white mb-3 group-hover:text-tech-gold transition-colors">
+              O Medo de Falar nas Plannings
+            </h3>
+            <!-- Description -->
+            <p class="text-sm text-tech-text-muted leading-relaxed">
+              Tens a solução técnica exata na cabeça, mas travas por medo do julgamento. Um colega homem diz exatamente o mesmo 5 minutos depois e leva o crédito.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="group relative rounded-xl border border-tech-purple-light bg-tech-purple-dark/40 p-8 transition-all duration-300 hover:border-tech-gold hover:shadow-[0_0_20px_rgba(212,175,55,0.1)] hover:-translate-y-1">
+            <!-- Icon -->
+            <div class="w-12 h-12 rounded-lg bg-tech-purple-light flex items-center justify-center border border-tech-purple-accent/60 mb-6 group-hover:border-tech-gold/50 transition-colors">
+              <i class="fa-solid fa-bullseye text-tech-gold text-xl"></i>
+            </div>
+            <!-- Title -->
+            <h3 class="font-display font-bold text-xl text-white mb-3 group-hover:text-tech-gold transition-colors">
+              A Armadilha da Dev Perfeita
+            </h3>
+            <!-- Description -->
+            <p class="text-sm text-tech-text-muted leading-relaxed">
+              Achas que precisas de dominar 100% da documentação e de todos os frameworks antes de aplicar para uma vaga sénior ou pedir uma promoção.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="group relative rounded-xl border border-tech-purple-light bg-tech-purple-dark/40 p-8 transition-all duration-300 hover:border-tech-gold hover:shadow-[0_0_20px_rgba(212,175,55,0.1)] hover:-translate-y-1">
+            <!-- Icon -->
+            <div class="w-12 h-12 rounded-lg bg-tech-purple-light flex items-center justify-center border border-tech-purple-accent/60 mb-6 group-hover:border-tech-gold/50 transition-colors">
+              <i class="fa-solid fa-battery-quarter text-tech-gold text-xl"></i>
+            </div>
+            <!-- Title -->
+            <h3 class="font-display font-bold text-xl text-white mb-3 group-hover:text-tech-gold transition-colors">
+              O Esgotamento Invisível
+            </h3>
+            <!-- Description -->
+            <p class="text-sm text-tech-text-muted leading-relaxed">
+              A exaustão mental de ter de provar o teu valor técnico todos os dias em equipas maioritariamente masculinas para não seres subestimada.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PREMIUM INTERACTIVE WIDGET: TECHNICAL ACHIEVEMENT WALL PREVIEW -->
+    <section id="achievement-wall" class="relative py-24 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Grid layout for the interactive tool -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Intro Text (5 cols) -->
+          <div class="lg:col-span-5 space-y-6">
+            <div class="font-mono text-xs text-tech-gold uppercase tracking-widest">[ Ferramenta Prática ]</div>
+            <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-white leading-tight">
+              Começa a construir o teu <span class="text-tech-gold italic">Technical Achievement Wall</span>
+            </h2>
+            <p class="text-tech-text-muted leading-relaxed">
+              O que é o teu <strong>Technical Achievement Wall</strong>? É a prova factual da tua competência técnica, estruturada e documentada para blindar a tua mente contra a síndrome da impostora e fundamentar negociações salariais ou promoções.
+            </p>
+            <p class="text-sm text-tech-text-muted">
+              Experimenta selecionar algumas das conquistas típicas ao lado para simular o teu painel de conquistas profissionais:
+            </p>
+            
+            <!-- Checkbox selector container -->
+            <div class="space-y-3 pt-2" id="achievements-selectors">
+              <!-- Item 1 -->
+              <button onclick="toggleAchievement(0)" id="selector-0" class="w-full text-left p-3 rounded-lg border border-tech-purple-light bg-tech-purple-dark/20 hover:border-tech-gold/50 flex items-start space-x-3 transition-all duration-200">
+                <span class="w-5 h-5 rounded border border-tech-gold/40 flex items-center justify-center text-xs text-tech-gold mt-0.5" id="check-0">
+                  <i class="fa-solid fa-check hidden"></i>
+                </span>
+                <span class="text-sm text-tech-text-muted group-hover:text-white" id="text-0">Defendi uma nova arquitetura técnica na planning sem recuar.</span>
+              </button>
+              <!-- Item 2 -->
+              <button onclick="toggleAchievement(1)" id="selector-1" class="w-full text-left p-3 rounded-lg border border-tech-purple-light bg-tech-purple-dark/20 hover:border-tech-gold/50 flex items-start space-x-3 transition-all duration-200">
+                <span class="w-5 h-5 rounded border border-tech-gold/40 flex items-center justify-center text-xs text-tech-gold mt-0.5" id="check-1">
+                  <i class="fa-solid fa-check hidden"></i>
+                </span>
+                <span class="text-sm text-tech-text-muted" id="text-1">Liderei a refatorização que diminuiu o tempo de resposta em 40%.</span>
+              </button>
+              <!-- Item 3 -->
+              <button onclick="toggleAchievement(2)" id="selector-2" class="w-full text-left p-3 rounded-lg border border-tech-purple-light bg-tech-purple-dark/20 hover:border-tech-gold/50 flex items-start space-x-3 transition-all duration-200">
+                <span class="w-5 h-5 rounded border border-tech-gold/40 flex items-center justify-center text-xs text-tech-gold mt-0.5" id="check-2">
+                  <i class="fa-solid fa-check hidden"></i>
+                </span>
+                <span class="text-sm text-tech-text-muted" id="text-2">Fiz o onboarding de novas engenheiras e estruturei a documentação.</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Simulated Dashboard Preview (7 cols) -->
+          <div class="lg:col-span-7 w-full">
+            <div class="bg-gradient-to-br from-tech-purple-light to-tech-purple-dark border-2 border-tech-gold/20 rounded-2xl p-6 shadow-2xl relative">
+              
+              <!-- Decorative elements -->
+              <div class="absolute top-4 right-4 flex items-center space-x-1.5 text-xs text-tech-gold/60 font-mono">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>SECURE_BOARD_v1.0</span>
+              </div>
+              
+              <h3 class="font-display font-bold text-lg text-white mb-6 flex items-center">
+                <i class="fa-solid fa-trophy text-tech-gold mr-2.5"></i>
+                Preview: O Teu Painel de Autoridade
+              </h3>
+              
+              <!-- Board items slot -->
+              <div id="wall-preview-container" class="space-y-4 min-h-[220px] flex flex-col justify-center">
+                <!-- Fallback empty state -->
+                <div id="empty-wall-state" class="text-center p-8 border border-dashed border-tech-purple-light rounded-xl">
+                  <i class="fa-solid fa-folder-open text-tech-purple-light text-4xl mb-3"></i>
+                  <p class="text-sm text-tech-text-muted font-mono">Seleciona uma conquista na barra lateral para veres o teu Wall em tempo real...</p>
+                </div>
+              </div>
+
+              <!-- Extra indicator -->
+              <div class="mt-6 border-t border-tech-purple-light/40 pt-4 flex justify-between items-center text-xs font-mono text-tech-text-muted">
+                <span>Total de Impacto: <span id="wall-count" class="text-tech-gold font-bold">0</span> conquista(s)</span>
+                <span class="text-tech-gold">Pronta para Negociar Promoções</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. OFFER SECTION (Os Programas) -->
+    <section id="programas" class="relative py-24 bg-tech-purple-dark/50 border-t border-tech-purple-light/40">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header -->
+        <div class="text-center max-w-3xl mx-auto mb-20">
+          <span class="font-mono text-xs text-tech-gold tracking-widest uppercase">[ Os Programas ]</span>
+          <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-white mt-3">
+            Como trabalhar comigo para acelerar a tua carreira
+          </h2>
+          <div class="h-1 w-20 bg-tech-gold mx-auto mt-4 rounded-full"></div>
+          <p class="text-tech-text-muted mt-4 text-base sm:text-lg">
+            Escolhe a modalidade que melhor se adapta ao teu momento de carreira atual.
+          </p>
+        </div>
+
+        <!-- 2-Column Comparison Layout -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-stretch max-w-5xl mx-auto">
+          
+          <!-- Box 1 (Mentoria Individual Premium) -->
+          <div class="relative rounded-2xl border-2 border-tech-gold bg-tech-purple-dark/60 p-8 sm:p-10 flex flex-col justify-between shadow-[0_0_30px_rgba(212,175,55,0.08)] hover:shadow-[0_0_35px_rgba(212,175,55,0.15)] transition-all duration-300">
+            <!-- Premium Badge / Tag -->
+            <div class="absolute -top-3.5 right-6 bg-tech-gold text-tech-bg text-xs font-black tracking-widest uppercase px-3 py-1 rounded-full border border-tech-gold-light shadow-md animate-pulse">
+              Vagas Limitadas
+            </div>
+
+            <div>
+              <!-- Header -->
+              <div class="mb-6">
+                <div class="text-tech-gold text-xs font-mono font-bold tracking-widest uppercase mb-1">PROGRAMA COMPLETO INDIVIDUAL</div>
+                <h3 class="font-display font-black text-2xl sm:text-3xl text-white">
+                  Mentoria Individual Premium 'Tech & Posicionamento'
+                </h3>
+              </div>
+
+              <!-- List of details -->
+              <ul class="space-y-4 mb-8">
+                <li class="flex items-start">
+                  <div class="w-6 h-6 rounded-full bg-tech-gold/10 flex items-center justify-center text-tech-gold mr-3 flex-shrink-0 mt-0.5">
+                    <i class="fa-solid fa-check text-xs"></i>
+                  </div>
+                  <span class="text-tech-text-muted text-sm sm:text-base">
+                    <strong>3 meses de transformação profunda</strong> personalizada para o teu contexto técnico específico.
+                  </span>
+                </li>
+                <li class="flex items-start">
+                  <div class="w-6 h-6 rounded-full bg-tech-gold/10 flex items-center justify-center text-tech-gold mr-3 flex-shrink-0 mt-0.5">
+                    <i class="fa-solid fa-check text-xs"></i>
+                  </div>
+                  <span class="text-tech-text-muted text-sm sm:text-base">
+                    <strong>6 sessões individuais ao vivo</strong> de mentoria estratégica direta e focada em resultados.
+                  </span>
+                </li>
+                <li class="flex items-start">
+                  <div class="w-6 h-6 rounded-full bg-tech-gold/10 flex items-center justify-center text-tech-gold mr-3 flex-shrink-0 mt-0.5">
+                    <i class="fa-solid fa-check text-xs"></i>
+                  </div>
+                  <span class="text-tech-text-muted text-sm sm:text-base">
+                    <strong>Suporte assíncrono exclusivo via WhatsApp</strong> para resolução de cenários reais de trabalho em tempo real (plannings, revisões salariais, liderança técnica).
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Action Button -->
+            <a href="https://wa.me/yourwhatsapplink" target="_blank" rel="noopener noreferrer" class="w-full py-4 text-center bg-tech-gold hover:bg-tech-gold-light text-tech-bg font-extrabold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 uppercase tracking-wider text-sm">
+              Candidatar-me à Mentoria Individual
+            </a>
+          </div>
+
+          <!-- Box 2 (Grupo Express) -->
+          <div class="rounded-2xl border border-tech-purple-light bg-tech-purple-dark/40 p-8 sm:p-10 flex flex-col justify-between hover:border-tech-gold/40 transition-all duration-300">
+            <div>
+              <!-- Header -->
+              <div class="mb-6">
+                <div class="text-tech-text-muted text-xs font-mono font-bold tracking-widest uppercase mb-1">IMERSÃO COLETIVA</div>
+                <h3 class="font-display font-black text-2xl sm:text-3xl text-white">
+                  Grupo de Desbloqueio Express
+                </h3>
+              </div>
+
+              <!-- List of details -->
+              <ul class="space-y-4 mb-8">
+                <li class="flex items-start">
+                  <div class="w-6 h-6 rounded-full bg-tech-purple-light flex items-center justify-center text-tech-gold mr-3 flex-shrink-0 mt-0.5">
+                    <i class="fa-solid fa-check text-xs"></i>
+                  </div>
+                  <span class="text-tech-text-muted text-sm sm:text-base">
+                    <strong>2 sessões intensivas de grupo ao vivo</strong> para criar dinâmicas de colaboração produtivas.
+                  </span>
+                </li>
+                <li class="flex items-start">
+                  <div class="w-6 h-6 rounded-full bg-tech-purple-light flex items-center justify-center text-tech-gold mr-3 flex-shrink-0 mt-0.5">
+                    <i class="fa-solid fa-check text-xs"></i>
+                  </div>
+                  <span class="text-tech-text-muted text-sm sm:text-base">
+                    Coorte exclusiva focada em no máximo <strong>10 mulheres</strong> para garantir mentoria direta em grupo.
+                  </span>
+                </li>
+                <li class="flex items-start">
+                  <div class="w-6 h-6 rounded-full bg-tech-purple-light flex items-center justify-center text-tech-gold mr-3 flex-shrink-0 mt-0.5">
+                    <i class="fa-solid fa-check text-xs"></i>
+                  </div>
+                  <span class="text-tech-text-muted text-sm sm:text-base">
+                    Ferramentas práticas para <strong>quebrar o perfeccionismo</strong> e construir de imediato o teu <strong>Technical Achievement Wall</strong>.
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Action Button -->
+            <a href="https://wa.me/yourwhatsapplink" target="_blank" rel="noopener noreferrer" class="w-full py-4 text-center border border-tech-gold/60 text-tech-gold hover:bg-tech-gold hover:text-tech-bg font-extrabold rounded-lg transition-all duration-300 uppercase tracking-wider text-sm">
+              Quero Entrar no Grupo Express
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. ABOUT THE MENTOR (A Mentora) -->
+    <section id="mentora" class="relative py-24 md:py-32 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Layout Split -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          
+          <!-- Image Column (5 Cols) -->
+          <div class="lg:col-span-5 flex justify-center">
+            <div class="relative w-full max-w-[380px]">
+              
+              <!-- Gold/Purple Offset Border Background -->
+              <div class="absolute -inset-3 bg-gradient-to-br from-tech-gold via-tech-purple-light to-tech-purple-accent rounded-2xl transform rotate-2 -z-10 opacity-70"></div>
+              
+              <!-- Main Photo Frame -->
+              <div class="aspect-[4/5] rounded-2xl overflow-hidden border-2 border-tech-gold shadow-2xl relative bg-tech-purple-dark">
+                <!-- Real Mentor Asset -->
+                <img src="assets/mentor.png" alt="A Mentora - Especialista em Tech & DevRel" class="w-full h-full object-cover">
+                <!-- Card Gradient Overlay -->
+                <div class="absolute inset-0 bg-gradient-to-t from-tech-purple-dark/80 via-transparent to-transparent"></div>
+                <!-- Mini Details overlay -->
+                <div class="absolute bottom-4 left-4 right-4 bg-tech-purple-dark/80 backdrop-blur-md rounded-lg p-3 border border-tech-purple-light">
+                  <div class="text-xs text-tech-gold font-mono uppercase tracking-wider">Metodologia Exclusiva</div>
+                  <div class="text-sm font-bold text-white">Posicionamento & DevRel</div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+          <!-- Text Column (7 Cols) -->
+          <div class="lg:col-span-7 space-y-6">
+            
+            <span class="font-mono text-xs text-tech-gold tracking-widest uppercase">[ A Mentora ]</span>
+            
+            <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-white">
+              Quem te vai acompanhar nesta jornada
+            </h2>
+            
+            <div class="h-1 w-20 bg-tech-gold rounded-full"></div>
+
+            <p class="text-lg text-tech-text-muted leading-relaxed font-light">
+              Sou especialista no ecossistema de tecnologia, desenvolvimento de comunidades e DevRel. Unindo a minha bagagem técnica real ao estudo profundo do posicionamento emocional e inteligência emocional, criei este método prático para dar às mulheres em tech as ferramentas exatas para destravarem a sua autoconfiança e dominarem o espaço que merecem.
+            </p>
+
+            <div class="grid grid-cols-2 gap-6 pt-4 text-sm font-mono text-tech-text-muted">
+              <div class="flex items-center space-x-3">
+                <i class="fa-solid fa-code text-tech-gold text-lg"></i>
+                <span>Bagagem Técnica Real</span>
+              </div>
+              <div class="flex items-center space-x-3">
+                <i class="fa-solid fa-users text-tech-gold text-lg"></i>
+                <span>Especialista DevRel</span>
+              </div>
+              <div class="flex items-center space-x-3">
+                <i class="fa-solid fa-heart text-tech-gold text-lg"></i>
+                <span>Inteligência Emocional</span>
+              </div>
+              <div class="flex items-center space-x-3">
+                <i class="fa-solid fa-rocket text-tech-gold text-lg"></i>
+                <span>Crescimento de Carreira</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PREMIUM FAQ SECTION (FAQ) -->
+    <section class="relative py-20 bg-tech-purple-dark/30 border-t border-tech-purple-light/40">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6">
+        
+        <div class="text-center mb-12">
+          <h2 class="font-display font-bold text-2xl sm:text-3xl text-white">Perguntas Frequentes</h2>
+          <div class="h-1 w-12 bg-tech-gold mx-auto mt-3 rounded-full"></div>
+        </div>
+
+        <div class="space-y-4">
+          <!-- FAQ 1 -->
+          <div class="border border-tech-purple-light rounded-lg bg-tech-purple-dark/40 overflow-hidden">
+            <button onclick="toggleFaq(1)" class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-tech-purple-light/20 transition-colors">
+              <span class="text-base font-semibold text-white">Para quem é esta mentoria?</span>
+              <i id="faq-icon-1" class="fa-solid fa-chevron-down text-tech-gold transition-transform duration-300"></i>
+            </button>
+            <div id="faq-answer-1" class="max-h-0 overflow-hidden transition-all duration-300">
+              <div class="px-6 pb-5 pt-1 text-sm text-tech-text-muted leading-relaxed">
+                Este programa foi desenhado exclusivamente para desenvolvedoras, engenheiras de software, tech leads e gerentes de produto que sentem que o perfeccionismo ou a insegurança emocional estão a travar o seu potencial de crescer rumo a cargos seniores e de liderança.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="border border-tech-purple-light rounded-lg bg-tech-purple-dark/40 overflow-hidden">
+            <button onclick="toggleFaq(2)" class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-tech-purple-light/20 transition-colors">
+              <span class="text-base font-semibold text-white">Como funciona o suporte assíncrono via WhatsApp?</span>
+              <i id="faq-icon-2" class="fa-solid fa-chevron-down text-tech-gold transition-transform duration-300"></i>
+            </button>
+            <div id="faq-answer-2" class="max-h-0 overflow-hidden transition-all duration-300">
+              <div class="px-6 pb-5 pt-1 text-sm text-tech-text-muted leading-relaxed">
+                No teu dia a dia de trabalho podes defrontar-te com situações reais urgentes, como uma negociação salarial complexa, o planeamento de uma sprint ou um conflito técnico. O suporte por WhatsApp serve para te fornecer aconselhamento e feedback em tempo real para saberes exatamente como responder.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="border border-tech-purple-light rounded-lg bg-tech-purple-dark/40 overflow-hidden">
+            <button onclick="toggleFaq(3)" class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-tech-purple-light/20 transition-colors">
+              <span class="text-base font-semibold text-white">Qual a diferença entre a Mentoria Individual e o Grupo Express?</span>
+              <i id="faq-icon-3" class="fa-solid fa-chevron-down text-tech-gold transition-transform duration-300"></i>
+            </button>
+            <div id="faq-answer-3" class="max-h-0 overflow-hidden transition-all duration-300">
+              <div class="px-6 pb-5 pt-1 text-sm text-tech-text-muted leading-relaxed">
+                A Mentoria Individual é um programa profundo de 3 meses com acompanhamento próximo, sessões quinzenais individuais e suporte diário por WhatsApp. O Grupo Express é uma imersão curta e coletiva (máximo de 10 participantes) focada em entregar ferramentas rápidas e construir o teu mural de conquistas técnicas em duas sessões ao vivo.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-tech-purple-dark border-t border-tech-purple-light/50 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0">
+        
+        <!-- Logo -->
+        <div class="flex items-center space-x-2">
+          <div class="w-8 h-8 rounded bg-tech-purple-light flex items-center justify-center border border-tech-gold/20">
+            <span class="font-mono text-tech-gold font-bold text-sm">&lt;/&gt;</span>
+          </div>
+          <span class="font-display font-bold text-sm tracking-wider text-white">
+            HIGHTECH <span class="text-tech-gold">WOMEN</span>
+          </span>
+        </div>
+
+        <!-- Links -->
+        <div class="flex flex-wrap justify-center gap-6 text-sm text-tech-text-muted">
+          <a href="#diagnostico" class="hover:text-tech-gold transition-colors">O Diagnóstico</a>
+          <a href="#achievement-wall" class="hover:text-tech-gold transition-colors">A Ferramenta</a>
+          <a href="#programas" class="hover:text-tech-gold transition-colors">Os Programas</a>
+          <a href="#mentora" class="hover:text-tech-gold transition-colors">A Mentora</a>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="flex space-x-4">
+          <a href="#" class="w-9 h-9 rounded-full bg-tech-purple-light hover:bg-tech-gold hover:text-tech-bg flex items-center justify-center transition-colors text-tech-text-muted" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="#" class="w-9 h-9 rounded-full bg-tech-purple-light hover:bg-tech-gold hover:text-tech-bg flex items-center justify-center transition-colors text-tech-text-muted" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="#" class="w-9 h-9 rounded-full bg-tech-purple-light hover:bg-tech-gold hover:text-tech-bg flex items-center justify-center transition-colors text-tech-text-muted" aria-label="WhatsApp">
+            <i class="fa-solid fa-phone"></i>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Copyright -->
+      <div class="mt-8 border-t border-tech-purple-light/20 pt-8 text-center text-xs text-tech-text-muted">
+        <p>&copy; 2026 HighTech Women Mentorship. Todos os direitos reservados. Desenhado para líderes de engenharia.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Page Interactivity Scripts -->
+  <script>
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close menu when clicking nav item
+    const mobileNavLinks = mobileMenu.querySelectorAll('a');
+    mobileNavLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    // FAQ Accordion Logic
+    function toggleFaq(id) {
+      const answer = document.getElementById(`faq-answer-${id}`);
+      const icon = document.getElementById(`faq-icon-${id}`);
+      
+      if (answer.style.maxHeight && answer.style.maxHeight !== '0px') {
+        answer.style.maxHeight = '0px';
+        icon.classList.remove('rotate-180');
+      } else {
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+        icon.classList.add('rotate-180');
+      }
+    }
+
+    // Technical Achievement Wall Interactive Widget Logic
+    const presetAchievements = [
+      {
+        tag: "COMUNICAÇÃO E LIDERANÇA",
+        desc: "Defendi uma nova arquitetura técnica na planning sem recuar frente ao escrutínio da equipa.",
+        impact: "Estabeleceu autoridade técnica e blindou a solução contra feedbacks baseados em preferência pessoal."
+      },
+      {
+        tag: "EXCELÊNCIA E PERFORMANCE",
+        desc: "Liderei a refatorização que diminuiu o tempo de resposta do endpoint de checkout em 40%.",
+        impact: "Melhorou diretamente a taxa de conversão e a performance do core business do produto."
+      },
+      {
+        tag: "MULTIPLICAÇÃO DE CONHECIMENTO",
+        desc: "Fiz o onboarding de novas engenheiras e estruturei a documentação da arquitetura interna.",
+        impact: "Reduziu o ramp-up time da equipa em 30%, escalando o conhecimento técnico internamente."
+      }
+    ];
+
+    const activeAchievements = new Set();
+
+    function toggleAchievement(index) {
+      const selector = document.getElementById(`selector-${index}`);
+      const check = document.getElementById(`check-${index}`).querySelector('i');
+      const text = document.getElementById(`text-${index}`);
+      
+      if (activeAchievements.has(index)) {
+        activeAchievements.delete(index);
+        selector.classList.remove('border-tech-gold');
+        selector.classList.add('border-tech-purple-light');
+        check.classList.add('hidden');
+        text.classList.remove('text-white');
+        text.classList.add('text-tech-text-muted');
+      } else {
+        activeAchievements.add(index);
+        selector.classList.add('border-tech-gold');
+        selector.classList.remove('border-tech-purple-light');
+        check.classList.remove('hidden');
+        text.classList.add('text-white');
+        text.classList.remove('text-tech-text-muted');
+      }
+      
+      updateWallPreview();
+    }
+
+    function updateWallPreview() {
+      const container = document.getElementById('wall-preview-container');
+      const countEl = document.getElementById('wall-count');
+      
+      countEl.innerText = activeAchievements.size;
+      
+      if (activeAchievements.size === 0) {
+        container.innerHTML = `
+          <div id="empty-wall-state" class="text-center p-8 border border-dashed border-tech-purple-light rounded-xl">
+            <i class="fa-solid fa-folder-open text-tech-purple-light text-4xl mb-3"></i>
+            <p class="text-sm text-tech-text-muted font-mono">Seleciona uma conquista na barra lateral para veres o teu Wall em tempo real...</p>
+          </div>
+        `;
+        return;
+      }
+      
+      let html = "";
+      
+      activeAchievements.forEach(index => {
+        const item = presetAchievements[index];
+        html += `
+          <div class="border border-tech-gold/30 bg-tech-purple-dark/90 rounded-xl p-4 sm:p-5 shadow-[0_0_15px_rgba(212,175,55,0.05)] transition-all duration-300">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-[10px] font-mono text-tech-gold border border-tech-gold/30 px-2 py-0.5 rounded tracking-widest bg-tech-gold/5 uppercase">${item.tag}</span>
+              <span class="text-[10px] font-mono text-tech-text-muted">STATUS: VERIFICADO</span>
+            </div>
+            <p class="text-sm text-white font-semibold mb-1">${item.desc}</p>
+            <p class="text-xs text-tech-text-muted italic flex items-start">
+              <span class="text-tech-gold mr-1.5">&gt;_ IMPACTO:</span>
+              <span>${item.impact}</span>
+            </p>
+          </div>
+        `;
+      });
+      
+      container.innerHTML = html;
+    }
+  </script>
+</body>
+</html>
