@@ -11,78 +11,64 @@ Checklist das sugestões de evolução do site. Marque `[x]` conforme for conclu
 - [x] Corrigir foto da mentora (`assets/mentor.jpg`)
 - [x] WhatsApp real com mensagem pré-preenchida (`+55 14 93618-0712`)
 - [x] Renomear "Desbloqueio Express" → **Grupo Tech & Posicionamento**
-- [x] Renomear Achievement Wall → **Conquistas Verificadas**
+- [x] Widget interativo → **Painel de Conquistas** (seção `#conquistas-verificadas`)
 - [x] CTAs principais apontando pro WhatsApp (hero, header, mobile, cards)
 - [x] CTA secundário rolando pra seção (`Ver os programas`)
 - [x] Bloco final de conversão após o FAQ
+- [x] Logo do header → scroll ao topo (`#top`)
+- [x] `alt` da foto: *Pachi — mentora de carreira em tech*
+- [x] `loading="lazy"` na foto da mentora
+- [x] Meta tags Open Graph + Twitter Card
+- [x] Favicon (`favicon.svg`) + Apple touch icon
+- [x] Comprimir `assets/mentor.jpg` (~177 KB, max 900px)
+- [x] Fontes Google: remover peso Montserrat 500 não usado
+- [x] FAQ: `aria-expanded`, formato online, seleção/vagas
+- [x] Menu mobile: fechar ao clicar fora
+- [x] Focus visível (`focus-visible`) em links e botões
+- [x] Fluxo em 1 linha no FAQ (*Manda mensagem → conversa sem compromisso → proposta*)
+- [x] Investimento: *Valores e formas de pagamento na conversa inicial*
+- [x] Micro-CTA no Painel de Conquistas (após marcar conquistas)
+- [x] Card 1:1: grupo incluso como bônus (alinhado ao FAQ)
+- [x] Badges da mentora sem logos de empresas
 
 ---
 
-## 🔴 Prioridade alta
+## 🔴 Prioridade alta — precisa do seu input
 
 ### Prova social
-- [x] Adicionar seção de depoimentos (2–3 quotes) → *placeholders em `#depoimentos`*
-- [x] Incluir nome, cargo e empresa de quem depoimentou → *estrutura com `[Nome]`, `[Cargo]`, `[Empresa]`*
-- [ ] Substituir placeholders por depoimentos reais
+- [ ] Substituir placeholders por depoimentos reais (`#depoimentos`)
 - [ ] Pedir autorização antes de publicar qualquer citação
 
 ### Sobre mim
-- [x] Colocar seu **nome** no lugar de "sou sua mentora" → `h2`: *"Oi, eu sou a Pachi!"*
-- [x] Credenciais: **empresas** (GitHub, Google, Vivo, Nubank no texto)
-- [x] Credenciais: **comunidades** (DevRel, estratégia de comunidades no texto + grid)
+- [ ] Linha de resultado (*"já acompanhei X mulheres..."*) — precisa do número real
+- [ ] Credenciais: **palestras** — só se quiser citar eventos específicos
 
-
-### Links sociais
-- [x] LinkedIn no rodapé → [linkedin.com/in/pachicodes](https://www.linkedin.com/in/pachicodes/)
-- [x] GitHub no rodapé → [github.com/pachicodes](https://github.com/pachicodes)
-
-
-
----
-
-## 🟡 Conversão e clareza
-
-### Processo
-- [ ] Explicar o fluxo em 1 linha ou mini-seção  
-  *Ex.: "Manda mensagem → conversa de 20 min → proposta personalizada"*
+### FAQ (políticas operacionais)
+- [ ] Quanto tempo dura cada sessão? (ex.: 60 ou 90 min)
+- [ ] Horários fixos da agenda
+- [ ] E se eu perder uma sessão? (reagendamento)
+- [ ] Tem contrato ou termo de participação? (link ou PDF)
 
 ### Investimento
-- [ ] Deixar claro que valores vêm na conversa inicial  
-  *Ex.: "Valores e formas de pagamento na conversa inicial"*
-- [ ] (Opcional) Indicar se há parcelamento ou faixa de investimento
+- [ ] (Opcional) Parcelamento ou faixa de preço
 
-### FAQ
-- [ ] Quanto tempo dura cada sessão?
-- [ ] Qual horário / formato (online)?
-- [ ] E se eu perder uma sessão?
-- [ ] Tem contrato ou termo de participação?
-- [ ] Como funciona a seleção / vagas limitadas?
-
-### Conquistas Verificadas
-- [ ] Micro-CTA depois que a pessoa marca conquistas no painel interativo  
-  *Ex.: "Quer montar o seu de verdade? Fala comigo no WhatsApp"*
+### Analytics
+- [ ] Instalar **GA4** — aguardando Measurement ID (`G-XXXXXXXX`)
+- [ ] (Opcional) Rastrear cliques nos botões de WhatsApp
 
 ---
 
 ## 🟢 Antes de divulgar em escala
 
 ### Compartilhamento
-- [ ] Adicionar `og:title`, `og:description`, `og:image`
-- [ ] Adicionar `twitter:card` (opcional)
-- [ ] Criar imagem de preview (~1200×630) pra link no WhatsApp/LinkedIn
+- [x] `og:title`, `og:description`, `og:image` (fallback: `assets/mentor.jpg`)
+- [x] `twitter:card`
+- [ ] Criar imagem OG branded (~1200×630) — portrait atual não é ideal
 
-### Identidade visual
-- [ ] Favicon (ícone `</>` ou logo da marca)
-- [ ] Apple touch icon (opcional)
-
-### Performance
-- [ ] Comprimir `assets/mentor.jpg`
-- [ ] Adicionar `loading="lazy"` na foto da mentora
-- [ ] Reduzir peso das fontes Google (só os pesos usados)
-
-### Analytics
-- [ ] Instalar Plausible, GA4 ou similar
-- [ ] (Opcional) Rastrear cliques nos botões de WhatsApp
+### Deploy
+- [ ] Atualizar `og:image` com URL absoluta quando tiver domínio
+- [ ] Publicar em domínio próprio (ex.: hightechwomen.com.br)
+- [ ] HTTPS configurado no host
 
 ---
 
@@ -90,18 +76,11 @@ Checklist das sugestões de evolução do site. Marque `[x]` conforme for conclu
 
 ### Técnico
 - [ ] Trocar Tailwind CDN por CSS buildado (produção)
-- [ ] Publicar em domínio próprio (ex.: hightechwomen.com.br)
-- [ ] HTTPS configurado no host
 
 ### Conteúdo
-- [ ] Seção "Como funciona" com passos da mentoria (1:1 e grupo)
+- [x] FAQ cobre diferença 1:1 vs grupo, formato online, seleção/vagas
 - [ ] Atualizar copy se preço ou duração dos programas mudar
 - [ ] Revisar textos a cada nova turma (vagas, datas)
-
-### Acessibilidade
-- [ ] FAQ: `aria-expanded` nos accordions
-- [ ] Menu mobile: fechar ao clicar fora
-- [ ] Focus visível nos botões e links
 
 ---
 

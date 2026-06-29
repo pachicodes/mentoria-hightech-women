@@ -5,6 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mentoria de Carreira e Posicionamento para Mulheres em Tech</title>
   <meta name="description" content="Uma mentoria sob medida para mulheres sêniores e plenas em tecnologia. Una estratégia de Big Techs com a profundidade da psicanálise para destravar sua liderança.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mentoria de Carreira e Posicionamento para Mulheres em Tech">
+  <meta property="og:description" content="Uma mentoria sob medida para mulheres sêniores e plenas em tecnologia. Una estratégia de Big Techs com a profundidade da psicanálise para destravar sua liderança.">
+  <meta property="og:image" content="assets/mentor.jpg">
+  <meta property="og:image:width" content="900">
+  <meta property="og:image:height" content="1023">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mentoria de Carreira e Posicionamento para Mulheres em Tech">
+  <meta name="twitter:description" content="Uma mentoria sob medida para mulheres sêniores e plenas em tecnologia. Una estratégia de Big Techs com a profundidade da psicanálise para destravar sua liderança.">
+  <meta name="twitter:image" content="assets/mentor.jpg">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   
   <!-- Tailwind CSS Play CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -36,7 +50,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
   
   <!-- FontAwesome for Premium Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -81,9 +95,16 @@
     .gold-glow-text {
       text-shadow: 0 0 12px rgba(212, 160, 136, 0.15);
     }
+
+    /* Keyboard focus — visible ring without mouse click styling */
+    a:focus-visible,
+    button:focus-visible {
+      outline: 2px solid #D4A088;
+      outline-offset: 2px;
+    }
   </style>
 </head>
-<body class="bg-tech-bg text-tech-text font-sans antialiased overflow-x-hidden tech-grid-pattern min-h-screen">
+<body id="top" class="bg-tech-bg text-tech-text font-sans antialiased overflow-x-hidden tech-grid-pattern min-h-screen">
 
   <!-- Ambient Glow Effects -->
   <div class="absolute top-20 left-1/4 w-[40vw] h-[40vw] rounded-full glow-blur-purple pointer-events-none -z-10"></div>
@@ -95,7 +116,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       
       <!-- Logo -->
-      <a href="#" class="flex items-center space-x-2 group">
+      <a href="#top" class="flex items-center space-x-2 group">
         <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-tech-purple-light to-tech-purple-accent border border-tech-gold/30 flex items-center justify-center group-hover:border-tech-gold transition-all">
           <span class="font-mono text-tech-gold font-bold text-lg">&lt;/&gt;</span>
         </div>
@@ -458,12 +479,12 @@
               <!-- Decorative elements -->
               <div class="absolute top-4 right-4 flex items-center space-x-1.5 text-xs text-tech-gold/60 font-mono">
                 <i class="fa-solid fa-shield-halved"></i>
-                <span>SECURE_BOARD_v1.0</span>
+                <span>PAINEL_CONQUISTAS_v1.0</span>
               </div>
               
               <h3 class="font-display font-bold text-lg text-white mb-6 flex items-center">
                 <i class="fa-solid fa-trophy text-tech-gold mr-2.5"></i>
-                Suas Conquistas Verificadas
+                Seu Painel de Conquistas
               </h3>
               
               <!-- Board items slot -->
@@ -471,7 +492,7 @@
                 <!-- Fallback empty state -->
                 <div id="empty-wall-state" class="text-center p-8 border border-dashed border-tech-purple-light rounded-xl">
                   <i class="fa-solid fa-folder-open text-tech-purple-light text-4xl mb-3"></i>
-                  <p class="text-sm text-tech-text-muted font-mono">Marca uma conquista do lado pra começar a montar suas Conquistas Verificadas</p>
+                  <p class="text-sm text-tech-text-muted font-mono">Marca uma conquista do lado pra começar a montar seu Painel de Conquistas</p>
                 </div>
               </div>
 
@@ -537,6 +558,12 @@
                     <strong>Suporte Estratégico no WhatsApp:</strong> Direto comigo para clareza em situações críticas em tempo real (conflitos na equipe, boards difíceis ou alinhamento de promoção).
                   </span>
                 </li>
+                <li class="flex items-start">
+                  <div class="w-6 h-6 rounded-full bg-tech-gold/10 flex items-center justify-center text-tech-gold mr-3 flex-shrink-0 mt-0.5"><i class="fa-solid fa-gift text-xs"></i></div>
+                  <span class="text-tech-text-muted text-sm sm:text-base">
+                    <strong>Grupo Tech & Posicionamento incluso como bônus</strong> — você leva o 1:1 e ainda participa das sessões coletivas.
+                  </span>
+                </li>
               </ul>
             </div>
 
@@ -579,7 +606,7 @@
                     <i class="fa-solid fa-check text-xs"></i>
                   </div>
                   <span class="text-tech-text-muted text-sm sm:text-base">
-                    Ferramentas pra <strong>largar o perfeccionismo</strong> e montar suas Conquistas Verificadas desde a primeira sessão.
+                    Ferramentas pra <strong>largar o perfeccionismo</strong> e montar seu Painel de Conquistas desde a primeira sessão.
                   </span>
                 </li>
               </ul>
@@ -592,6 +619,11 @@
           </div>
 
         </div>
+
+        <p class="text-center text-sm text-tech-text-muted mt-10 font-mono max-w-xl mx-auto">
+          <i class="fa-solid fa-comments text-tech-gold mr-1.5"></i>
+          Valores e formas de pagamento na conversa inicial.
+        </p>
 
       </div>
     </section>
@@ -613,13 +645,13 @@
               <!-- Main Photo Frame -->
               <div class="aspect-[4/5] rounded-2xl overflow-hidden border-2 border-tech-gold shadow-2xl relative bg-tech-purple-dark">
                 <!-- Real Mentor Asset -->
-                <img src="assets/mentor.jpg" alt="Mentora — Especialista em Tech & DevRel" class="w-full h-full object-cover">
+                <img src="assets/mentor.jpg" alt="Pachi — mentora de carreira em tech" loading="lazy" class="w-full h-full object-cover">
                 <!-- Card Gradient Overlay -->
                 <div class="absolute inset-0 bg-gradient-to-t from-tech-purple-dark/80 via-transparent to-transparent"></div>
                 <!-- Mini Details overlay -->
                 <div class="absolute bottom-4 left-4 right-4 bg-tech-purple-dark/80 backdrop-blur-md rounded-lg p-3 border border-tech-purple-light">
-                  <div class="text-xs text-tech-gold font-mono uppercase tracking-wider">Como trabalho</div>
-                  <div class="text-sm font-bold text-white">Posicionamento & DevRel</div>
+                  <div class="text-xs text-tech-gold font-mono uppercase tracking-wider">A Mentora</div>
+                  <div class="text-sm font-bold text-white">Pachi · Tech & Posicionamento</div>
                 </div>
               </div>
               
@@ -640,10 +672,10 @@
             </p>
 
             <div class="grid grid-cols-2 gap-6 pt-4 text-sm font-mono text-tech-text-muted">
-              <div class="flex items-center space-x-3"><i class="fa-solid fa-code text-tech-gold text-lg"></i><span>Bagagem GitHub & Google</span></div>
-              <div class="flex items-center space-x-3"><i class="fa-solid fa-users text-tech-gold text-lg"></i><span>Estratégia de Comunidades</span></div>
+              <div class="flex items-center space-x-3"><i class="fa-solid fa-building text-tech-gold text-lg"></i><span>Grandes ambientes de tech</span></div>
+              <div class="flex items-center space-x-3"><i class="fa-solid fa-ear-listen text-tech-gold text-lg"></i><span>Escuta de verdade</span></div>
               <div class="flex items-center space-x-3"><i class="fa-solid fa-brain text-tech-gold text-lg"></i><span>Abordagem Psicanalítica</span></div>
-              <div class="flex items-center space-x-3"><i class="fa-solid fa-rocket text-tech-gold text-lg"></i><span>Planos Não-Genéricos</span></div>
+              <div class="flex items-center space-x-3"><i class="fa-solid fa-rocket text-tech-gold text-lg"></i><span>Planos de alfaiataria</span></div>
             </div>
           </div>
 
@@ -725,7 +757,7 @@
               <i class="fa-solid fa-star text-xs"></i>
             </div>
             <blockquote class="text-sm text-tech-text-muted leading-relaxed mb-6">
-              "Montar as Conquistas Verificadas mudou como eu negocio promoção. Parei de esperar que o código falasse por mim — passei a ter argumentos concretos e confiança na conversa."
+              "Montar o Painel de Conquistas mudou como eu negocio promoção. Parei de esperar que o código falasse por mim — passei a ter argumentos concretos e confiança na conversa."
             </blockquote>
             <div class="flex items-center space-x-3 border-t border-tech-purple-light/40 pt-4">
               <div class="w-10 h-10 rounded-full bg-tech-purple-light border border-tech-gold/30 flex items-center justify-center font-mono text-xs text-tech-gold font-bold">[?]</div>
@@ -747,12 +779,15 @@
         <div class="text-center mb-12">
           <h2 class="font-display font-bold text-2xl sm:text-3xl text-white">Ficou com dúvida?</h2>
           <div class="h-1 w-12 bg-tech-gold mx-auto mt-3 rounded-full"></div>
+          <p class="text-tech-text-muted mt-4 text-sm font-mono">
+            Manda mensagem → conversa sem compromisso → proposta do formato certo
+          </p>
         </div>
 
         <div class="space-y-4">
           <!-- FAQ 1 -->
           <div class="border border-tech-purple-light rounded-lg bg-tech-purple-dark/40 overflow-hidden">
-            <button onclick="toggleFaq(1)" class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-tech-purple-light/20 transition-colors">
+            <button type="button" id="faq-btn-1" onclick="toggleFaq(1)" aria-expanded="false" aria-controls="faq-answer-1" class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-tech-purple-light/20 transition-colors">
               <span class="text-base font-semibold text-white">Pra quem é isso?</span>
               <i id="faq-icon-1" class="fa-solid fa-chevron-down text-tech-gold transition-transform duration-300"></i>
             </button>
@@ -765,7 +800,7 @@
 
           <!-- FAQ 2 -->
           <div class="border border-tech-purple-light rounded-lg bg-tech-purple-dark/40 overflow-hidden">
-            <button onclick="toggleFaq(2)" class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-tech-purple-light/20 transition-colors">
+            <button type="button" id="faq-btn-2" onclick="toggleFaq(2)" aria-expanded="false" aria-controls="faq-answer-2" class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-tech-purple-light/20 transition-colors">
               <span class="text-base font-semibold text-white">Como funciona o WhatsApp?</span>
               <i id="faq-icon-2" class="fa-solid fa-chevron-down text-tech-gold transition-transform duration-300"></i>
             </button>
@@ -778,13 +813,39 @@
 
           <!-- FAQ 3 -->
           <div class="border border-tech-purple-light rounded-lg bg-tech-purple-dark/40 overflow-hidden">
-            <button onclick="toggleFaq(3)" class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-tech-purple-light/20 transition-colors">
+            <button type="button" id="faq-btn-3" onclick="toggleFaq(3)" aria-expanded="false" aria-controls="faq-answer-3" class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-tech-purple-light/20 transition-colors">
               <span class="text-base font-semibold text-white">Qual a diferença entre 1:1 e o grupo?</span>
               <i id="faq-icon-3" class="fa-solid fa-chevron-down text-tech-gold transition-transform duration-300"></i>
             </button>
             <div id="faq-answer-3" class="max-h-0 overflow-hidden transition-all duration-300">
               <div class="px-6 pb-5 pt-1 text-sm text-tech-text-muted leading-relaxed">
-                A mentoria 1:1 dura 3 meses, com acompanhamento de perto, sessões quinzenais, WhatsApp no dia a dia — e o Grupo Tech & Posicionamento vem incluso como bônus. Só o grupo dura 2 meses, com encontros quinzenais ao vivo, turma pequena (até 10 pessoas) e foco em ferramentas práticas e montar suas Conquistas Verificadas.
+                A mentoria 1:1 dura 3 meses, com acompanhamento de perto, sessões quinzenais, WhatsApp no dia a dia — e o Grupo Tech & Posicionamento vem incluso como bônus. Só o grupo dura 2 meses, com encontros quinzenais ao vivo, turma pequena (até 10 pessoas) e foco em ferramentas práticas e montar seu Painel de Conquistas.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="border border-tech-purple-light rounded-lg bg-tech-purple-dark/40 overflow-hidden">
+            <button type="button" id="faq-btn-4" onclick="toggleFaq(4)" aria-expanded="false" aria-controls="faq-answer-4" class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-tech-purple-light/20 transition-colors">
+              <span class="text-base font-semibold text-white">Qual horário e formato das sessões?</span>
+              <i id="faq-icon-4" class="fa-solid fa-chevron-down text-tech-gold transition-transform duration-300"></i>
+            </button>
+            <div id="faq-answer-4" class="max-h-0 overflow-hidden transition-all duration-300">
+              <div class="px-6 pb-5 pt-1 text-sm text-tech-text-muted leading-relaxed">
+                Todas as sessões são ao vivo por videochamada. Os horários são alinhados com a turma ou com você na conversa inicial, pra funcionar com a sua rotina.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="border border-tech-purple-light rounded-lg bg-tech-purple-dark/40 overflow-hidden">
+            <button type="button" id="faq-btn-5" onclick="toggleFaq(5)" aria-expanded="false" aria-controls="faq-answer-5" class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-tech-purple-light/20 transition-colors">
+              <span class="text-base font-semibold text-white">Como funciona a seleção e as vagas?</span>
+              <i id="faq-icon-5" class="fa-solid fa-chevron-down text-tech-gold transition-transform duration-300"></i>
+            </button>
+            <div id="faq-answer-5" class="max-h-0 overflow-hidden transition-all duration-300">
+              <div class="px-6 pb-5 pt-1 text-sm text-tech-text-muted leading-relaxed">
+                A mentoria 1:1 é por aplicação — a gente conversa primeiro pra ver se faz sentido pra ambos. O grupo tem turma pequena (até 10 mulheres) e vagas limitadas por ciclo.
               </div>
             </div>
           </div>
@@ -876,6 +937,15 @@
       mobileMenu.classList.toggle('hidden');
     });
 
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!mobileMenu.classList.contains('hidden') &&
+          !mobileMenu.contains(e.target) &&
+          !mobileMenuBtn.contains(e.target)) {
+        mobileMenu.classList.add('hidden');
+      }
+    });
+
     // Close menu when clicking nav item
     const mobileNavLinks = mobileMenu.querySelectorAll('a');
     mobileNavLinks.forEach(link => {
@@ -888,13 +958,17 @@
     function toggleFaq(id) {
       const answer = document.getElementById(`faq-answer-${id}`);
       const icon = document.getElementById(`faq-icon-${id}`);
-      
-      if (answer.style.maxHeight && answer.style.maxHeight !== '0px') {
+      const button = document.getElementById(`faq-btn-${id}`);
+      const isOpen = answer.style.maxHeight && answer.style.maxHeight !== '0px';
+
+      if (isOpen) {
         answer.style.maxHeight = '0px';
         icon.classList.remove('rotate-180');
+        button.setAttribute('aria-expanded', 'false');
       } else {
         answer.style.maxHeight = answer.scrollHeight + 'px';
         icon.classList.add('rotate-180');
+        button.setAttribute('aria-expanded', 'true');
       }
     }
 
@@ -953,7 +1027,7 @@
         container.innerHTML = `
           <div id="empty-wall-state" class="text-center p-8 border border-dashed border-tech-purple-light rounded-xl">
             <i class="fa-solid fa-folder-open text-tech-purple-light text-4xl mb-3"></i>
-            <p class="text-sm text-tech-text-muted font-mono">Marca uma conquista do lado pra começar a montar suas Conquistas Verificadas</p>
+            <p class="text-sm text-tech-text-muted font-mono">Marca uma conquista do lado pra começar a montar seu Painel de Conquistas</p>
           </div>
         `;
         return;
@@ -977,6 +1051,12 @@
           </div>
         `;
       });
+
+      html += `
+        <a href="https://wa.me/5514936180712?text=Oi!%20Quero%20montar%20meu%20Painel%20de%20Conquistas%20na%20mentoria" target="_blank" rel="noopener noreferrer" class="block text-center py-3 px-4 rounded-lg border border-tech-gold/60 text-tech-gold hover:bg-tech-gold hover:text-tech-bg text-sm font-semibold transition-all duration-300">
+          <i class="fa-brands fa-whatsapp mr-2"></i>Quer montar o seu de verdade? Fala comigo
+        </a>
+      `;
       
       container.innerHTML = html;
     }
