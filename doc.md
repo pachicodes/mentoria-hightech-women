@@ -33,9 +33,10 @@ Checklist das sugestões de evolução do site. Marque `[x]` conforme for conclu
 
 
 ### Links sociais
-- [ ] LinkedIn no rodapé → URL real (ou remover até ter)
-- [ ] GitHub no rodapé → URL real (ou remover até ter)
-- [ ] Logo do header: trocar `href="#"` por link útil (topo da página ou WhatsApp)
+- [x] LinkedIn no rodapé → [linkedin.com/in/pachicodes](https://www.linkedin.com/in/pachicodes/)
+- [x] GitHub no rodapé → [github.com/pachicodes](https://github.com/pachicodes)
+
+
 
 ---
 
