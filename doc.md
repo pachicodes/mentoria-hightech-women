@@ -30,8 +30,7 @@ Checklist das sugestões de evolução do site. Marque `[x]` conforme for conclu
 - [x] Colocar seu **nome** no lugar de "sou sua mentora" → `h2`: *"Oi, eu sou a Pachi!"*
 - [x] Credenciais: **empresas** (GitHub, Google, Vivo, Nubank no texto)
 - [x] Credenciais: **comunidades** (DevRel, estratégia de comunidades no texto + grid)
-- [ ] Credenciais: **palestras** (ainda não mencionadas no site)
-- [ ] Atualizar `alt` da foto com seu nome (hoje: *"Mentora — Especialista em Tech & DevRel"*)
+
 
 ### Links sociais
 - [ ] LinkedIn no rodapé → URL real (ou remover até ter)
