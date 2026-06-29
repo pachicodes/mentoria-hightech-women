@@ -11,6 +11,7 @@ Checklist das sugestões de evolução do site. Marque `[x]` conforme for conclu
 - [x] Corrigir foto da mentora (`assets/mentor.jpg`)
 - [x] WhatsApp real com mensagem pré-preenchida (`+55 14 93618-0712`)
 - [x] Renomear "Desbloqueio Express" → **Grupo Tech & Posicionamento**
+- [x] Renomear Achievement Wall → **Conquistas Verificadas**
 - [x] CTAs principais apontando pro WhatsApp (hero, header, mobile, cards)
 - [x] CTA secundário rolando pra seção (`Ver os programas`)
 - [x] Bloco final de conversão após o FAQ
@@ -20,15 +21,17 @@ Checklist das sugestões de evolução do site. Marque `[x]` conforme for conclu
 ## 🔴 Prioridade alta
 
 ### Prova social
-- [ ] Adicionar seção de depoimentos (2–3 quotes)
-- [ ] Incluir nome, cargo e empresa de quem depoimentou
+- [x] Adicionar seção de depoimentos (2–3 quotes) → *placeholders em `#depoimentos`*
+- [x] Incluir nome, cargo e empresa de quem depoimentou → *estrutura com `[Nome]`, `[Cargo]`, `[Empresa]`*
+- [ ] Substituir placeholders por depoimentos reais
 - [ ] Pedir autorização antes de publicar qualquer citação
 
 ### Sobre mim
-- [ ] Colocar seu **nome** no lugar de "sou sua mentora"
-- [ ] Incluir credenciais concretas (empresas, comunidades, palestras)
-- [ ] Adicionar linha de resultado, se tiver (*"já acompanhei X mulheres..."*)
-- [ ] Atualizar `alt` da foto com seu nome
+- [x] Colocar seu **nome** no lugar de "sou sua mentora" → `h2`: *"Oi, eu sou a Pachi!"*
+- [x] Credenciais: **empresas** (GitHub, Google, Vivo, Nubank no texto)
+- [x] Credenciais: **comunidades** (DevRel, estratégia de comunidades no texto + grid)
+- [ ] Credenciais: **palestras** (ainda não mencionadas no site)
+- [ ] Atualizar `alt` da foto com seu nome (hoje: *"Mentora — Especialista em Tech & DevRel"*)
 
 ### Links sociais
 - [ ] LinkedIn no rodapé → URL real (ou remover até ter)
@@ -55,7 +58,7 @@ Checklist das sugestões de evolução do site. Marque `[x]` conforme for conclu
 - [ ] Tem contrato ou termo de participação?
 - [ ] Como funciona a seleção / vagas limitadas?
 
-### Achievement Wall
+### Conquistas Verificadas
 - [ ] Micro-CTA depois que a pessoa marca conquistas no painel interativo  
   *Ex.: "Quer montar o seu de verdade? Fala comigo no WhatsApp"*
 
