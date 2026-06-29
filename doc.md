@@ -30,6 +30,7 @@ Checklist das sugestões de evolução do site. Marque `[x]` conforme for conclu
 - [x] Micro-CTA no Painel de Conquistas (após marcar conquistas)
 - [x] Card 1:1: grupo incluso como bônus (alinhado ao FAQ)
 - [x] Badges da mentora sem logos de empresas
+- [x] Tailwind CSS buildado (`dist/styles.css`) — ver `npm run build:css` nas notas
 
 ---
 
@@ -38,10 +39,6 @@ Checklist das sugestões de evolução do site. Marque `[x]` conforme for conclu
 ### Prova social
 - [ ] Substituir placeholders por depoimentos reais (`#depoimentos`)
 - [ ] Pedir autorização antes de publicar qualquer citação
-
-### Sobre mim
-- [ ] Linha de resultado (*"já acompanhei X mulheres..."*) — precisa do número real
-- [ ] Credenciais: **palestras** — só se quiser citar eventos específicos
 
 ### FAQ (políticas operacionais)
 - [ ] Quanto tempo dura cada sessão? (ex.: 60 ou 90 min)
@@ -75,7 +72,7 @@ Checklist das sugestões de evolução do site. Marque `[x]` conforme for conclu
 ## 🔵 Quando estabilizar o produto
 
 ### Técnico
-- [ ] Trocar Tailwind CDN por CSS buildado (produção)
+- [x] Trocar Tailwind CDN por CSS buildado (produção) → `npm run build:css` gera `dist/styles.css`
 
 ### Conteúdo
 - [x] FAQ cobre diferença 1:1 vs grupo, formato online, seleção/vagas
@@ -85,6 +82,13 @@ Checklist das sugestões de evolução do site. Marque `[x]` conforme for conclu
 ---
 
 ## Notas rápidas
+
+**CSS (Tailwind):**
+```bash
+npm install          # primeira vez
+npm run build:css    # gera dist/styles.css antes de publicar
+npm run watch:css    # desenvolvimento com rebuild automático
+```
 
 **Link WhatsApp (padrão):**
 ```

@@ -19,33 +19,8 @@
 
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-  
-  <!-- Tailwind CSS Play CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            'tech-bg': '#252038',
-            'tech-purple-dark': '#1E1A2E',
-            'tech-purple-light': '#3D3658',
-            'tech-purple-accent': '#524A72',
-            'tech-gold': '#D4A088',
-            'tech-gold-light': '#F0D4C8',
-            'tech-gold-dark': '#B8836A',
-            'tech-text': '#F5F3F0',
-            'tech-text-muted': '#A8A4B8'
-          },
-          fontFamily: {
-            sans: ['Inter', 'sans-serif'],
-            display: ['Montserrat', 'sans-serif'],
-            mono: ['Fira Code', 'monospace']
-          }
-        }
-      }
-    }
-  </script>
+
+  <link rel="stylesheet" href="dist/styles.css">
   
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -54,55 +29,6 @@
   
   <!-- FontAwesome for Premium Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
-  <style>
-    /* Custom Scrollbar */
-    ::-webkit-scrollbar {
-      width: 8px;
-    }
-    ::-webkit-scrollbar-track {
-      background: #252038;
-    }
-    ::-webkit-scrollbar-thumb {
-      background: #3D3658;
-      border-radius: 4px;
-      border: 1px solid #252038;
-    }
-    ::-webkit-scrollbar-thumb:hover {
-      background: #D4A088;
-    }
-
-    /* Technical Grid Background Pattern */
-    .tech-grid-pattern {
-      background-size: 40px 40px;
-      background-image: 
-        linear-gradient(to right, rgba(212, 160, 136, 0.012) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(212, 160, 136, 0.012) 1px, transparent 1px);
-    }
-    
-    /* Glowing radial background spots */
-    .glow-blur-purple {
-      filter: blur(130px);
-      background: radial-gradient(circle, rgba(160, 140, 200, 0.07) 0%, rgba(37, 32, 56, 0) 70%);
-    }
-
-    .glow-blur-gold {
-      filter: blur(100px);
-      background: radial-gradient(circle, rgba(212, 160, 136, 0.05) 0%, rgba(37, 32, 56, 0) 70%);
-    }
-
-    /* Soft accent text shadow */
-    .gold-glow-text {
-      text-shadow: 0 0 12px rgba(212, 160, 136, 0.15);
-    }
-
-    /* Keyboard focus — visible ring without mouse click styling */
-    a:focus-visible,
-    button:focus-visible {
-      outline: 2px solid #D4A088;
-      outline-offset: 2px;
-    }
-  </style>
 </head>
 <body id="top" class="bg-tech-bg text-tech-text font-sans antialiased overflow-x-hidden tech-grid-pattern min-h-screen">
 
@@ -292,11 +218,11 @@
         <div class="text-center max-w-3xl mx-auto mb-16">
           <span class="font-mono text-xs text-tech-gold tracking-widest uppercase">[ Dados do Mercado ]</span>
           <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-white mt-3 tracking-tight">
-            Por que o Posicionamento Emocional?
+            Por que só saber código não é o suficiente?
           </h2>
           <div class="h-1 w-20 bg-tech-gold mx-auto mt-4 rounded-full"></div>
           <p class="text-tech-text-muted mt-4 text-base sm:text-lg">
-            Métricas de performance, gráficos e commits são ótimos para avaliar máquinas, mas não resolvem as dinâmicas humanas. O que acontece no silêncio do Slack, o recuo invisível em uma planning ou o peso de carregar o piano técnico e emocional de um time inteiramente nas costas... nada disso aparece nos relatórios do Jira. Se o seu objetivo é ir além do operacional e assumir o espaço estratégico que você já merece, o caminho não é acumular mais uma certificação técnica. É aprender a decifrar as pessoas e os bastidores.
+            Métricas de performance, gráficos e commits são ótimos para avaliar máquinas, mas não resolvem as dinâmicas humanas. O que acontece no silêncio do Slack, o recuo invisível em uma planning ou o peso de carregar o piano técnico e emocional de um time inteiramente nas costas... nada disso aparece nos relatórios do Jira. Se o seu objetivo é ir além do operacional e assumir o espaço estratégico que você já merece, o caminho não é acumular mais uma certificação técnica. É aprender a decifrar as pessoas e o que acontece por trás das telas.
           </p>
         </div>
 
@@ -437,10 +363,10 @@
           <div class="lg:col-span-5 space-y-6">
             <div class="font-mono text-xs text-tech-gold uppercase tracking-widest">[ Reconheça seu Impacto ]</div>
             <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-white leading-tight">
-              Traga seus bastidores <span class="text-tech-gold italic">para a luz</span>
+              Traga a sua trajetória <span class="text-tech-gold italic">para a luz</span>
             </h2>
             <p class="text-tech-text-muted leading-relaxed">
-              O nosso cérebro adora silenciar as nossas vitórias e fixar o foco apenas no incêndio que precisamos apagar amanhã. O Painel de Conquistas é uma ferramenta prática para você documentar a sua trajetória de impacto real, livre de falsas modéstias. Ele serve para você enxergar, com clareza estruturada, o tamanho do que você entrega. É um exercício para blindar sua segurança interna e te dar argumentos inquestionáveis quando for a hora de negociar seu espaço ou se posicionar.
+              O nosso cérebro adora silenciar as nossas vitórias e fixar o foco apenas no incêndio que precisamos apagar amanhã. O Painel de Conquistas é uma ferramenta prática para você documentar a sua jornada de impacto real, livre de falsas modéstias. Ele serve para você enxergar, com clareza estruturada, o tamanho do que você entrega. É um exercício para blindar sua segurança interna e te dar argumentos inquestionáveis quando for a hora de negociar seu espaço ou se posicionar.
             </p>
             <p class="text-sm text-tech-text-muted">
               Marca uma conquista do lado e vê como ela aparece no painel:
