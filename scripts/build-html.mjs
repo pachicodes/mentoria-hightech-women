@@ -107,6 +107,49 @@ function buildArticleMeta(meta) {
   return `<meta property="article:published_time" content="${meta.datePublished}">`;
 }
 
+function formatDateShort(isoDate) {
+  const months = ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez'];
+  const [year, month, day] = isoDate.split('-');
+  return `${parseInt(day, 10)} ${months[parseInt(month, 10) - 1]} ${year}`;
+}
+
+function buildRelatedPosts(relPath) {
+  const normalized = relPath.replace(/\\/g, '/');
+  if (!normalized.startsWith('blog/') || normalized === 'blog/index.html') return '';
+
+  const articles = Object.entries(pagesMeta)
+    .filter(([path, meta]) => meta.ogType === 'article' && path !== normalized)
+    .sort((a, b) => (b[1].datePublished || '').localeCompare(a[1].datePublished || ''))
+    .slice(0, 2);
+
+  if (!articles.length) return '';
+
+  return articles
+    .map(([path, meta]) => {
+      const slug = path.replace(/^blog\//, '');
+      const title = meta.ogTitle || meta.title.replace(/ — Blog.*$/, '');
+      const category = meta.category || '';
+      const date = meta.datePublished ? formatDateShort(meta.datePublished) : '';
+
+      return `<article class="group flex flex-col rounded-2xl border border-tech-purple-light/60 bg-tech-purple-dark/40 overflow-hidden transition-all duration-300 hover:border-tech-gold/50 hover:shadow-[0_0_25px_rgba(212,160,136,0.06)]">
+  <div class="p-6 flex flex-col flex-grow">
+    <div class="flex items-center justify-between gap-3 mb-4">
+      <span class="font-mono text-[10px] text-tech-gold border border-tech-gold/30 px-2 py-0.5 rounded uppercase tracking-widest">${category}</span>
+      <time datetime="${meta.datePublished}" class="text-xs font-mono text-tech-text-muted">${date}</time>
+    </div>
+    <h3 class="font-display font-bold text-lg text-white mb-3 group-hover:text-tech-gold transition-colors leading-snug">
+      <a href="${slug}">${title}</a>
+    </h3>
+    <p class="text-sm text-tech-text-muted leading-relaxed flex-grow">${meta.description}</p>
+    <a href="${slug}" class="inline-flex items-center text-sm font-semibold text-tech-gold mt-4 group-hover:translate-x-1 transition-transform">
+      Ler artigo <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+    </a>
+  </div>
+</article>`;
+    })
+    .join('\n');
+}
+
 function resolveIncludes(content, depth = 0) {
   if (depth > 10) throw new Error('Include depth exceeded');
   return content.replace(/<!-- @include ([^\s]+) -->/g, (_, partialPath) => {
@@ -147,6 +190,7 @@ function applyTokens(content, meta, relPath) {
     .replace(/@CSS_PREFIX@/g, cssPrefix)
     .replace(/@WA_URL@/g, waUrl)
     .replace(/@WA_NEWSLETTER_URL@/g, waNewsletterUrl)
+    .replace(/@RELATED_POSTS@/g, buildRelatedPosts(relPath))
     .replace(/@SCRIPTS@/g, scripts);
 }
 

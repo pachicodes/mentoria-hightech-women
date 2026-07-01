@@ -21,6 +21,7 @@
     "ogDescription": "Estatísticas de 2026, barreiras invisíveis e o mapa do jogo corporativo para mulheres sêniores em tech.",
     "datePublished": "2026-06-28",
     "author": "Pachi",
+    "category": "Manifesto",
     "cssPrefix": "../",
     "scripts": []
   },
@@ -31,6 +32,7 @@
     "ogTitle": "Por que você recua na planning — mesmo quando tem a resposta",
     "datePublished": "2026-06-15",
     "author": "Pachi",
+    "category": "Posicionamento",
     "cssPrefix": "../",
     "scripts": []
   },
@@ -41,6 +43,7 @@
     "ogTitle": "Painel de Conquistas: documente seu impacto e negocie de verdade",
     "datePublished": "2026-06-22",
     "author": "Pachi",
+    "category": "Carreira",
     "cssPrefix": "../",
     "scripts": []
   }
