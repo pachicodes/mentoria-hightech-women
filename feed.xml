@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Blog HighTech Women</title>
+    <link>https://hightechwomen.netlify.app/blog/</link>
+    <description>Artigos sobre carreira, posicionamento e liderança para mulheres em tecnologia.</description>
+    <language>pt-BR</language>
+    <item>
+      <title>Por que a HighTech Women precisa existir? (E por que não é coisa da sua cabeça)</title>
+      <link>https://hightechwomen.netlify.app/blog/por-que-hightech-women-existe.html</link>
+      <guid isPermaLink="true">https://hightechwomen.netlify.app/blog/por-que-hightech-women-existe.html</guid>
+      <description>O mercado não está travado pela sua competência técnica. Dados de 2026 da WomenTech Network e a missão da HighTech Women para mulheres sêniores em tech.</description>
+      <pubDate>Sun, 28 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Painel de Conquistas: documente seu impacto e negocie de verdade</title>
+      <link>https://hightechwomen.netlify.app/blog/painel-de-conquistas-negociacao.html</link>
+      <guid isPermaLink="true">https://hightechwomen.netlify.app/blog/painel-de-conquistas-negociacao.html</guid>
+      <description>Por que documentar seu impacto real muda completamente a forma como você negocia promoção e espaço em tech.</description>
+      <pubDate>Mon, 22 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Por que você recua na planning — mesmo quando tem a resposta</title>
+      <link>https://hightechwomen.netlify.app/blog/por-que-recuar-na-planning.html</link>
+      <guid isPermaLink="true">https://hightechwomen.netlify.app/blog/por-que-recuar-na-planning.html</guid>
+      <description>Não é falta de preparo técnico. Entenda o que acontece antes de você abrir a boca em reuniões de alinhamento.</description>
+      <pubDate>Mon, 15 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>
