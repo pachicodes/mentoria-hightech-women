@@ -1,46 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-BR" class="scroll-smooth">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Por que a HighTech Women precisa existir? — Blog</title>
-  <meta name="description" content="O mercado não está travado pela sua competência técnica. Dados de 2026 da WomenTech Network e a missão da HighTech Women para mulheres sêniores em tech.">
-
-  <meta property="og:type" content="article">
-  <meta property="og:url" content="https://hightechwomen.netlify.app">
-  <meta property="og:title" content="Por que a HighTech Women precisa existir? (E por que não é coisa da sua cabeça)">
-  <meta property="og:description" content="Estatísticas de 2026, barreiras invisíveis e o mapa do jogo corporativo para mulheres sêniores em tech.">
-  <meta property="og:image" content="https://hightechwomen.netlify.app/assets/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Por que a HighTech Women precisa existir? (E por que não é coisa da sua cabeça)">
-  <meta name="twitter:description" content="Estatísticas de 2026, barreiras invisíveis e o mapa do jogo corporativo para mulheres sêniores em tech.">
-  <meta name="twitter:image" content="https://hightechwomen.netlify.app/assets/og-image.png">
-
-  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
-  <link rel="stylesheet" href="../dist/styles.css">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-  
-</head>
-
+<!-- @include partials/head.html -->
 <body class="bg-tech-bg text-tech-text font-sans antialiased overflow-x-hidden tech-grid-pattern min-h-screen">
 
-    <header class="sticky top-0 z-50 w-full backdrop-blur-md bg-tech-bg/75 border-b border-tech-purple-light/50">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
-      <a href="index.html" class="text-sm font-mono text-tech-gold hover:text-tech-gold-light transition-colors">
-        <i class="fa-solid fa-arrow-left mr-2"></i>Blog
-      </a>
-      <a href="../index.html" class="text-xs font-mono text-tech-text-muted hover:text-tech-gold transition-colors">HighTech Women</a>
-    </div>
-  </header>
-
+  <!-- @include partials/nav-blog-article.html -->
 
   <div class="relative border-b border-tech-purple-light/40 overflow-hidden">
     <div class="absolute inset-0 bg-gradient-to-br from-tech-purple-dark via-tech-bg to-tech-purple-accent/30"></div>
@@ -147,7 +110,7 @@
             Quer receber os próximos artigos e não perder nenhuma edição? Manda uma mensagem — e conta qual foi a última barreira invisível que você enfrentou na sua empresa essa semana.
           </p>
           <div class="flex flex-col sm:flex-row gap-3">
-            <a href="https://wa.me/5514936180712?text=Oi!%20Quero%20receber%20os%20artigos%20do%20blog%20HighTech%20Women." target="_blank" rel="noopener noreferrer" data-track="whatsapp" class="inline-flex items-center justify-center px-6 py-3 bg-tech-gold hover:bg-tech-gold-light text-tech-bg font-bold rounded-lg transition-all text-sm">
+            <a href="@WA_NEWSLETTER_URL@" target="_blank" rel="noopener noreferrer" data-track="whatsapp" class="inline-flex items-center justify-center px-6 py-3 bg-tech-gold hover:bg-tech-gold-light text-tech-bg font-bold rounded-lg transition-all text-sm">
               <i class="fa-brands fa-whatsapp mr-2"></i> Quero ficar por dentro
             </a>
             <a href="../index.html#programas" class="inline-flex items-center justify-center px-6 py-3 border border-tech-gold/60 text-tech-gold hover:bg-tech-gold hover:text-tech-bg font-bold rounded-lg transition-all text-sm">
@@ -159,19 +122,6 @@
     </article>
   </main>
 
-    <footer class="bg-tech-purple-dark border-t border-tech-purple-light/50 py-12">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left">
-        <a href="../index.html" class="inline-flex items-center text-sm text-tech-text-muted hover:text-tech-gold transition-colors">
-          <i class="fa-solid fa-arrow-left mr-1"></i> Voltar para a homepage
-        </a>
-        <a href="https://wa.me/5514936180712?text=Oi!%20Quero%20receber%20os%20artigos%20do%20blog%20HighTech%20Women." target="_blank" rel="noopener noreferrer" data-track="whatsapp" class="inline-flex items-center text-sm font-semibold text-tech-gold hover:text-tech-gold-light transition-colors">
-          <i class="fa-brands fa-whatsapp mr-2"></i> Receber artigos
-        </a>
-      </div>
-      <p class="text-xs text-tech-text-muted text-center mt-8">&copy; 2026 HighTech Women.</p>
-    </div>
-  </footer>
-
+  <!-- @include partials/footer-blog.html -->
 </body>
 </html>

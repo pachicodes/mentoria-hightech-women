@@ -1,0 +1,39 @@
+{
+  "index.html": {
+    "title": "Mentoria de Carreira e Posicionamento para Mulheres em Tech",
+    "description": "Mentoria sob medida para mulheres plenas e sêniores em tech. Vivência de mercado + olhar psicanalítico para destravar posicionamento e liderança — sem fórmulas prontas.",
+    "ogType": "website",
+    "cssPrefix": "",
+    "scripts": ["assets/site.js", "assets/conquistas.js"]
+  },
+  "blog/index.html": {
+    "title": "Blog — HighTech Women",
+    "description": "Artigos sobre carreira, posicionamento e liderança para mulheres plenas e sêniores em tecnologia.",
+    "ogType": "website",
+    "cssPrefix": "../",
+    "scripts": ["assets/site.js"]
+  },
+  "blog/por-que-hightech-women-existe.html": {
+    "title": "Por que a HighTech Women precisa existir? — Blog",
+    "description": "O mercado não está travado pela sua competência técnica. Dados de 2026 da WomenTech Network e a missão da HighTech Women para mulheres sêniores em tech.",
+    "ogType": "article",
+    "ogTitle": "Por que a HighTech Women precisa existir? (E por que não é coisa da sua cabeça)",
+    "ogDescription": "Estatísticas de 2026, barreiras invisíveis e o mapa do jogo corporativo para mulheres sêniores em tech.",
+    "cssPrefix": "../",
+    "scripts": []
+  },
+  "blog/por-que-recuar-na-planning.html": {
+    "title": "Por que você recua na planning — Blog HighTech Women",
+    "description": "Não é falta de preparo técnico. Entenda o que acontece antes de você abrir a boca em reuniões de alinhamento.",
+    "ogType": "article",
+    "cssPrefix": "../",
+    "scripts": []
+  },
+  "blog/painel-de-conquistas-negociacao.html": {
+    "title": "Painel de Conquistas — Blog HighTech Women",
+    "description": "Por que documentar seu impacto real muda completamente a forma como você negocia promoção e espaço em tech.",
+    "ogType": "article",
+    "cssPrefix": "../",
+    "scripts": []
+  }
+}

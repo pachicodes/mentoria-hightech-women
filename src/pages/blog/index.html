@@ -1,79 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-BR" class="scroll-smooth">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog — HighTech Women</title>
-  <meta name="description" content="Artigos sobre carreira, posicionamento e liderança para mulheres plenas e sêniores em tecnologia.">
-
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://hightechwomen.netlify.app">
-  <meta property="og:title" content="Blog — HighTech Women">
-  <meta property="og:description" content="Artigos sobre carreira, posicionamento e liderança para mulheres plenas e sêniores em tecnologia.">
-  <meta property="og:image" content="https://hightechwomen.netlify.app/assets/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Blog — HighTech Women">
-  <meta name="twitter:description" content="Artigos sobre carreira, posicionamento e liderança para mulheres plenas e sêniores em tecnologia.">
-  <meta name="twitter:image" content="https://hightechwomen.netlify.app/assets/og-image.png">
-
-  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
-  <link rel="stylesheet" href="../dist/styles.css">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-  
-</head>
-
+<!-- @include partials/head.html -->
 <body id="top" class="bg-tech-bg text-tech-text font-sans antialiased overflow-x-hidden tech-grid-pattern min-h-screen">
 
   <div class="absolute top-20 left-1/4 w-[40vw] h-[40vw] rounded-full glow-blur-purple pointer-events-none -z-10"></div>
   <div class="absolute top-1/3 right-1/4 w-[35vw] h-[35vw] rounded-full glow-blur-gold pointer-events-none -z-10"></div>
 
-    <header class="sticky top-0 z-50 w-full backdrop-blur-md bg-tech-bg/75 border-b border-tech-purple-light/50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-      <a href="../index.html" class="flex items-center space-x-2 group">
-        <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-tech-purple-light to-tech-purple-accent border border-tech-gold/30 flex items-center justify-center group-hover:border-tech-gold transition-all">
-          <span class="font-mono text-tech-gold font-bold text-lg">&lt;/&gt;</span>
-        </div>
-        <span class="font-display font-extrabold text-lg tracking-wider text-white">
-          HIGHTECH <span class="text-tech-gold font-semibold">WOMEN</span>
-        </span>
-      </a>
-
-      <nav class="hidden md:flex items-center space-x-8">
-        <a href="../index.html#diagnostico" class="text-sm font-medium hover:text-tech-gold transition-colors">O problema</a>
-        <a href="../index.html#programas" class="text-sm font-medium hover:text-tech-gold transition-colors">Programas</a>
-        <a href="../index.html#mentora" class="text-sm font-medium hover:text-tech-gold transition-colors">Sobre mim</a>
-        <a href="index.html" class="text-sm font-medium text-tech-gold transition-colors">Blog</a>
-      </nav>
-
-      <div class="hidden md:block">
-        <a href="https://wa.me/5514936180712?text=Oi!%20Quero%20saber%20mais%20sobre%20a%20mentoria%20HighTech%20Women" target="_blank" rel="noopener noreferrer" data-track="whatsapp" class="inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-sm font-semibold border border-tech-gold text-tech-gold hover:bg-tech-gold hover:text-tech-bg transition-all duration-300">
-          Quero começar
-        </a>
-      </div>
-
-      <div class="flex md:hidden">
-        <button id="mobile-menu-btn" type="button" class="text-tech-text-muted hover:text-white focus:outline-none" aria-label="Abrir menu">
-          <i class="fa-solid fa-bars text-2xl"></i>
-        </button>
-      </div>
-    </div>
-
-    <div id="mobile-menu" class="hidden md:hidden bg-tech-purple-dark/95 border-b border-tech-purple-light/50 px-4 pt-2 pb-6 space-y-4">
-      <a href="../index.html#diagnostico" class="block text-base font-medium py-2 border-b border-tech-purple-light/30 hover:text-tech-gold">O problema</a>
-      <a href="../index.html#programas" class="block text-base font-medium py-2 border-b border-tech-purple-light/30 hover:text-tech-gold">Programas</a>
-      <a href="../index.html#mentora" class="block text-base font-medium py-2 border-b border-tech-purple-light/30 hover:text-tech-gold">Sobre mim</a>
-      <a href="index.html" class="block text-base font-medium py-2 border-b border-tech-purple-light/30 text-tech-gold">Blog</a>
-    </div>
-  </header>
-
+  <!-- @include partials/nav-blog.html -->
 
   <main class="relative py-16 md:py-24">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -165,7 +98,7 @@
             <p class="text-sm text-tech-text-muted leading-relaxed flex-grow">
               Novo artigo em produção. Enquanto isso, manda uma mensagem se esse tema ressoa com você agora.
             </p>
-            <a href="https://wa.me/5514936180712?text=Oi!%20Quero%20saber%20mais%20sobre%20a%20mentoria%20HighTech%20Women" target="_blank" rel="noopener noreferrer" data-track="whatsapp" class="inline-flex items-center text-sm font-semibold text-tech-gold mt-6">
+            <a href="@WA_URL@" target="_blank" rel="noopener noreferrer" data-track="whatsapp" class="inline-flex items-center text-sm font-semibold text-tech-gold mt-6">
               Falar comigo <i class="fa-brands fa-whatsapp ml-2"></i>
             </a>
           </div>
@@ -175,20 +108,7 @@
     </div>
   </main>
 
-    <footer class="bg-tech-purple-dark border-t border-tech-purple-light/50 py-12">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left">
-        <a href="../index.html" class="inline-flex items-center text-sm text-tech-text-muted hover:text-tech-gold transition-colors">
-          <i class="fa-solid fa-arrow-left mr-1"></i> Voltar para a homepage
-        </a>
-        <a href="https://wa.me/5514936180712?text=Oi!%20Quero%20receber%20os%20artigos%20do%20blog%20HighTech%20Women." target="_blank" rel="noopener noreferrer" data-track="whatsapp" class="inline-flex items-center text-sm font-semibold text-tech-gold hover:text-tech-gold-light transition-colors">
-          <i class="fa-brands fa-whatsapp mr-2"></i> Receber artigos
-        </a>
-      </div>
-      <p class="text-xs text-tech-text-muted text-center mt-8">&copy; 2026 HighTech Women.</p>
-    </div>
-  </footer>
-
-  <script src="../assets/site.js"></script>
+  <!-- @include partials/footer-blog.html -->
+  @SCRIPTS@
 </body>
 </html>

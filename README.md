@@ -1,12 +1,18 @@
-# HighTech Women — Todo list de melhorias
+# HighTech Women
 
-Checklist das sugestões de evolução do site. Marque `[x]` conforme for concluindo.
+Site da mentoria de carreira e posicionamento para mulheres plenas e sêniores em tech — Pachi.
+
+Stack: HTML estático + Tailwind CSS + build Node (partials). Deploy previsto: Netlify.
 
 ---
 
-## ✅ Já feito
+## Todo list de melhorias
 
-### Base e visual
+Checklist de evolução do site. Marque `[x]` conforme for concluindo.
+
+### ✅ Já feito
+
+#### Base e visual
 - [x] Paleta de cores mais suave
 - [x] Linguagem casual e tom brasileiro (você / paulistana)
 - [x] Corrigir foto da mentora (`assets/mentor.jpg`)
@@ -32,7 +38,7 @@ Checklist das sugestões de evolução do site. Marque `[x]` conforme for conclu
 - [x] Credencial discreta: GitHub, Vivo, Nubank, Google na bio
 - [x] Blog com Artigo #1 (manifesto)
 
-### Refatoração (jun/2026)
+#### Refatoração (jun/2026)
 - [x] Reordenar homepage: Hero → Diagnóstico → Dados teaser → Sobre → Programas → Blog → Painel → FAQ → CTA
 - [x] Nav simplificado: O problema · Programas · Sobre mim · Blog
 - [x] Seção `#depoimentos` removida (reativar quando houver citações reais)
@@ -48,34 +54,34 @@ Checklist das sugestões de evolução do site. Marque `[x]` conforme for conclu
 
 ---
 
-## 🔴 Prioridade alta — precisa do seu input
+### 🔴 Prioridade alta — precisa do seu input
 
-### Prova social
+#### Prova social
 - [ ] Substituir placeholders por depoimentos reais (seção `#depoimentos` — reativar quando pronta)
 - [ ] Pedir autorização antes de publicar qualquer citação
 
 **Para reativar depoimentos:** adicionar seção `#depoimentos` de volta em `src/pages/index.html` após `#mentora` ou `#programas`, com 2–3 citações reais autorizadas.
 
-### FAQ (confirmar copy)
+#### FAQ (confirmar copy)
 - [ ] Confirmar duração das sessões (placeholder: **60 min**)
 - [ ] Confirmar política de reagendamento (placeholder: **24h de aviso**)
 - [ ] Confirmar texto sobre contrato/termo
 - [ ] Horários fixos da agenda (se quiser publicar)
 
-### Analytics
+#### Analytics
 - [ ] Instalar **GA4** — substituir `G-XXXXXXXX` em `site.config.json`
 - [ ] (Opcional) Validar evento `whatsapp_click` no GA4
 
 ---
 
-## 🟢 Antes de divulgar em escala
+### 🟢 Antes de divulgar em escala
 
-### Compartilhamento
+#### Compartilhamento
 - [x] `og:title`, `og:description`, `og:image` branded
 - [x] `twitter:card`
 - [ ] Atualizar `siteUrl` em `site.config.json` com domínio final (ex.: `hightechwomen.com.br`)
 
-### Deploy (Netlify)
+#### Deploy (Netlify)
 - [ ] Conectar repositório ao Netlify
 - [ ] Build command: `npm run build` · Publish: `.` (raiz)
 - [ ] Configurar domínio custom + HTTPS
@@ -83,18 +89,18 @@ Checklist das sugestões de evolução do site. Marque `[x]` conforme for conclu
 
 ---
 
-## 🔵 Quando estabilizar o produto
+### 🔵 Quando estabilizar o produto
 
-### Conteúdo
+#### Conteúdo
 - [x] FAQ cobre diferença 1:1 vs grupo, formato online, seleção/vagas
 - [ ] Atualizar copy se preço ou duração dos programas mudar
 - [ ] Revisar textos a cada nova turma (vagas, datas)
 
 ---
 
-## Notas rápidas
+## Desenvolvimento
 
-**Desenvolvimento — editar sempre os templates em `src/pages/`, não os HTML na raiz:**
+**Edite sempre os templates em `src/pages/` — os HTML na raiz são gerados pelo build.**
 
 ```bash
 npm install              # primeira vez
@@ -105,17 +111,16 @@ npm run build            # tudo (CSS + HTML + OG)
 npm run watch:css        # rebuild CSS ao salvar
 ```
 
-**Config central:** [`site.config.json`](site.config.json)
-- `siteUrl` — URL absoluta para OG tags
-- `ga4Id` — Measurement ID (deixe `G-XXXXXXXX` para desligado)
-- `whatsapp` — número sem formatação
+### Config central — `site.config.json`
 
-**Link WhatsApp (padrão):**
-```
-https://wa.me/5514936180712?text=Oi!%20Quero%20saber%20mais%20sobre%20a%20mentoria%20HighTech%20Women
-```
+| Campo | Descrição |
+|-------|-----------|
+| `siteUrl` | URL absoluta para OG tags |
+| `ga4Id` | Measurement ID (deixe `G-XXXXXXXX` para desligado) |
+| `whatsapp` | Número sem formatação |
 
-**Programas atuais:**
+### Programas atuais
+
 | Formato | Nome | Duração |
 |---------|------|---------|
 | Individual | Tech & Posicionamento — 1:1 | 3 meses, quinzenal + WhatsApp |
