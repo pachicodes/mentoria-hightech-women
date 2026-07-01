@@ -256,7 +256,10 @@
               <!-- Main Photo Frame -->
               <div class="aspect-[4/5] rounded-2xl overflow-hidden border-2 border-tech-gold shadow-2xl relative bg-tech-purple-dark">
                 <!-- Real Mentor Asset -->
-                <img src="assets/mentor.jpg" alt="Pachi — mentora de carreira em tech" loading="lazy" class="w-full h-full object-cover">
+                <picture>
+                  <source srcset="assets/mentor.webp" type="image/webp">
+                  <img src="assets/mentor.jpg" alt="Pachi — mentora de carreira em tech" loading="lazy" width="760" height="950" class="w-full h-full object-cover">
+                </picture>
                 <!-- Card Gradient Overlay -->
                 <div class="absolute inset-0 bg-gradient-to-t from-tech-purple-dark/80 via-transparent to-transparent"></div>
                 <!-- Mini Details overlay -->
@@ -664,6 +667,87 @@
             </div>
           </div>
         </div>
+
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Pra quem é isso?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Pra devs, engenheiras, tech leads e product managers que sentem que o perfeccionismo, o recuo ou o posicionamento travado estão travando a carreira em direção a cargos sênior ou de liderança. Se você se identificou com algo acima, esse programa é pra você."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Como funciona o WhatsApp?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No dia a dia aparecem situações reais — uma planning complicada, uma conversa de salário, um conflito na equipe. Você pode mandar mensagem e receber feedback na hora pra saber como responder."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Qual a diferença entre 1:1 e o grupo?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A mentoria 1:1 dura 3 meses, com acompanhamento de perto, sessões quinzenais, WhatsApp no dia a dia — e o Grupo Tech & Posicionamento vem incluso como bônus. Só o grupo dura 2 meses, com encontros quinzenais ao vivo, turma pequena (até 10 pessoas) e foco em ferramentas práticas e montar seu Painel de Conquistas."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Qual horário e formato das sessões?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Todas as sessões são ao vivo por videochamada. Os horários são alinhados com a turma ou com você na conversa inicial, pra funcionar com a sua rotina."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Como funciona a seleção e as vagas?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A mentoria 1:1 é por aplicação — a gente conversa primeiro pra ver se faz sentido pra ambos. O grupo tem turma pequena (até 10 mulheres) e vagas limitadas por ciclo."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Quanto tempo dura cada sessão?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "60 minutos."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "E se eu perder uma sessão?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Reagendamento com aviso prévio de 24 horas."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Tem contrato ou termo de participação?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sim, enviado antes do início do programa."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Quanto custa?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Valores e formas de pagamento na conversa inicial, sem compromisso."
+              }
+            }
+          ]
+        }
+        </script>
 
       </div>
     </section>

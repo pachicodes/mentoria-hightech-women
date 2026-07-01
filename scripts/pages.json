@@ -19,6 +19,8 @@
     "ogType": "article",
     "ogTitle": "Por que a HighTech Women precisa existir? (E por que não é coisa da sua cabeça)",
     "ogDescription": "Estatísticas de 2026, barreiras invisíveis e o mapa do jogo corporativo para mulheres sêniores em tech.",
+    "datePublished": "2026-06-28",
+    "author": "Pachi",
     "cssPrefix": "../",
     "scripts": []
   },
@@ -26,6 +28,9 @@
     "title": "Por que você recua na planning — Blog HighTech Women",
     "description": "Não é falta de preparo técnico. Entenda o que acontece antes de você abrir a boca em reuniões de alinhamento.",
     "ogType": "article",
+    "ogTitle": "Por que você recua na planning — mesmo quando tem a resposta",
+    "datePublished": "2026-06-15",
+    "author": "Pachi",
     "cssPrefix": "../",
     "scripts": []
   },
@@ -33,6 +38,9 @@
     "title": "Painel de Conquistas — Blog HighTech Women",
     "description": "Por que documentar seu impacto real muda completamente a forma como você negocia promoção e espaço em tech.",
     "ogType": "article",
+    "ogTitle": "Painel de Conquistas: documente seu impacto e negocie de verdade",
+    "datePublished": "2026-06-22",
+    "author": "Pachi",
     "cssPrefix": "../",
     "scripts": []
   }

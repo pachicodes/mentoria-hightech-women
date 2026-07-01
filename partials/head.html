@@ -3,14 +3,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>@TITLE@</title>
   <meta name="description" content="@DESCRIPTION@">
+  <link rel="canonical" href="@PAGE_URL@">
 
   <meta property="og:type" content="@OG_TYPE@">
-  <meta property="og:url" content="@SITE_URL@">
+  <meta property="og:url" content="@PAGE_URL@">
   <meta property="og:title" content="@OG_TITLE@">
   <meta property="og:description" content="@OG_DESCRIPTION@">
   <meta property="og:image" content="@OG_IMAGE@">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="pt_BR">
+  @ARTICLE_META@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="@OG_TITLE@">
   <meta name="twitter:description" content="@OG_DESCRIPTION@">
@@ -18,12 +21,13 @@
 
   <link rel="icon" href="@CSS_PREFIX@favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="@CSS_PREFIX@assets/apple-touch-icon.png">
+  <link rel="alternate" type="application/rss+xml" title="Blog HighTech Women" href="@SITE_URL@/feed.xml">
   <link rel="stylesheet" href="@CSS_PREFIX@dist/styles.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400&family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
 
+  @JSONLD@
   @GA4_SCRIPT@
 </head>

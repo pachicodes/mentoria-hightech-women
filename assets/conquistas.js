@@ -25,7 +25,7 @@
     const text = document.getElementById(`text-${index}`);
     if (!selector || !checkIcon || !text) return;
 
-    const check = checkIcon.querySelector('i');
+    const check = checkIcon.querySelector('svg') || checkIcon.querySelector('i');
 
     if (activeAchievements.has(index)) {
       activeAchievements.delete(index);
