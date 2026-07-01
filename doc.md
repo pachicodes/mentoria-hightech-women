@@ -46,6 +46,19 @@ Checklist das sugestões de evolução do site. Marque `[x]` conforme for conclu
 - [x] Footer com "Receber artigos" via WhatsApp
 - [x] `netlify.toml` para deploy
 
+### SEO, performance e alcance (jul/2026)
+- [x] `<link rel="canonical">` e `og:url` corretos por página (via build)
+- [x] JSON-LD: `Article` nos posts, `ProfessionalService` na home, `FAQPage` no FAQ
+- [x] `article:published_time` nos posts do blog
+- [x] `sitemap.xml` gerado no build
+- [x] `robots.txt` na raiz
+- [x] `feed.xml` (RSS) do blog
+- [x] OG image por post (`assets/og/<slug>.png`)
+- [x] Font Awesome removido → SVGs inline no build (`scripts/icons.mjs`)
+- [x] Fontes Google enxugadas (Montserrat 700/800, Fira Code 400)
+- [x] `mentor.webp` gerado no build (760×950, ~71 KB) + `<picture>`
+- [x] Cache longo em `/assets/*` e `/dist/*` (`netlify.toml`)
+
 ---
 
 ## 🔴 Prioridade alta — precisa do seu input
@@ -62,9 +75,11 @@ Checklist das sugestões de evolução do site. Marque `[x]` conforme for conclu
 - [ ] Confirmar texto sobre contrato/termo
 - [ ] Horários fixos da agenda (se quiser publicar)
 
-### Analytics
+### Analytics e indexação (manual)
 - [ ] Instalar **GA4** — substituir `G-XXXXXXXX` em `site.config.json`
 - [ ] (Opcional) Validar evento `whatsapp_click` no GA4
+- [ ] Cadastrar site no **Google Search Console**
+- [ ] Enviar `https://hightechwomen.netlify.app/sitemap.xml` no Search Console
 
 ---
 
@@ -99,9 +114,10 @@ Checklist das sugestões de evolução do site. Marque `[x]` conforme for conclu
 ```bash
 npm install              # primeira vez
 npm run build:css        # só CSS
-npm run build:html       # partials → index.html, blog/
-npm run build:og         # SVG → assets/og-image.png
-npm run build            # tudo (CSS + HTML + OG)
+npm run build:img        # mentor.jpg → mentor.webp
+npm run build:og         # OG default + uma imagem por post
+npm run build:html       # partials → index.html, blog/ + sitemap + feed + ícones SVG
+npm run build            # tudo (CSS + img + OG + HTML)
 npm run watch:css        # rebuild CSS ao salvar
 ```
 
